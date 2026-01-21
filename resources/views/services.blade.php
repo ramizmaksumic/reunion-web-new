@@ -5,7 +5,7 @@
 <x-page-hero-section title="Usluge" description="Detaljan opis usluga Reunion web & marketing agencije" />
 
 <section class="bg-secondary py-16 md:py-20">
-    <div class="flex flex-col mx-auto px-6 md:px-16 max-w-screen-2xl gap-y-4">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl gap-y-4">
 
         <!-- WEB DESIGN -->
         <div

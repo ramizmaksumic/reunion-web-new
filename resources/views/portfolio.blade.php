@@ -9,7 +9,7 @@
 <section class="bg-secondary md:py-20">
 
 
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5 gap-y-3">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5 gap-y-3">
         <livewire:portfolio />
 
 
@@ -18,7 +18,7 @@
 </section>
 
 <section class=" py-20">
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
+    <div class="flex flex-col mx-auto px-5 md:px-16max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
 
         <div class="flex flex-col md:flex-row gap-x-10">
             <div class="w-full md:w-1/3 text-center md:text-start">

@@ -1,11 +1,13 @@
 <div>
     <!-- Tabs -->
-    <div class="flex gap-6 mb-10">
+    <div class="flex flex-wrap gap-3 md:gap-6 mb-6 md:mb-10">
         <button
             wire:click="setCategory('all')"
-            class="font-heading {{ $activeCategory === 'all' ? 'text-primary' : '' }}">
+            class="font-heading px-3 py-1 rounded-full border border-gray-300 text-sm md:text-base
+    {{ $activeCategory === 'all' ? 'text-primary border-primary' : 'text-gray-600' }}">
             Sve
         </button>
+
 
         @foreach($categories as $category)
         <button

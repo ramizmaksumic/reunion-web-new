@@ -9,7 +9,7 @@
 <section class="bg-secondary py-20">
 
 
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5 gap-y-3">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5 gap-y-3">
 
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="col-span-2">
@@ -57,7 +57,7 @@
             <div class="flex flex-col md:w-1/2">
                 <!-- Slika -->
                 <div class="w-full flex justify-start">
-                    <img src="{{ URL::asset('images/services/google ads.png') }}"
+                    <img src="{{ URL::asset('images/services/google-ads.png') }}"
                         alt="Laptop"
                         class="h-auto rounded-2xl md:max-w-[100%]">
                 </div>
@@ -121,7 +121,7 @@
 
 
 <section class=" py-20">
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
 
         <div class="flex flex-col md:flex-row gap-x-10">
             <div class="w-full md:w-1/3 text-center md:text-start">

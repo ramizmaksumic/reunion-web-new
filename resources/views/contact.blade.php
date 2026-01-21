@@ -7,7 +7,7 @@
 <section class="bg-secondary">
 
 
-    <div class="grid grid-cols-1 md:grid-cols-2 mx-auto px-16 max-w-screen-2xl justify-between ">
+    <div class="grid grid-cols-1 md:grid-cols-2 mx-auto px-5 md:px-16 max-w-screen-2xl justify-between ">
         <div>
             <h2 class="font-heading text-4xl mt-5">Kontakt informacije</h2>
             <div class="flex flex-col mt-10">
@@ -44,8 +44,10 @@
                 </div>
             </div>
         </div>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.35978041275!2d17.819022012382117!3d43.30672737464943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134b6706878eca97%3A0xfed58d681b154295!2sReunion%20agencija!5e0!3m2!1sbs!2sba!4v1755677570750!5m2!1sbs!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="w-full overflow-hidden rounded-2xl">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.35978041275!2d17.819022012382117!3d43.30672737464943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134b6706878eca97%3A0xfed58d681b154295!2sReunion%20agencija!5e0!3m2!1sbs!2sba!4v1755677570750!5m2!1sbs!2sba"
+                class="w-full h-[350px] md:h-[450px] border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
 
@@ -56,7 +58,7 @@
 
 
 <section class=" py-20">
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
 
         <div class="flex flex-col md:flex-row gap-x-10">
             <div class="w-full md:w-1/3 text-center md:text-start">

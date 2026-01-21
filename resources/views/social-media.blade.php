@@ -9,7 +9,7 @@
 <section class="bg-secondary py-20">
 
 
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5 gap-y-3">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5 gap-y-3">
 
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="col-span-2">
@@ -57,8 +57,8 @@
             <div class="flex flex-col md:w-1/2">
                 <!-- Slika -->
                 <div class="w-full flex justify-center">
-                    <img src="{{ URL::asset('images/services/Social media.png') }}"
-                        alt="Laptop"
+                    <img src="{{ URL::asset('images/services/social-media.png') }}"
+                        alt="Social-media"
                         class="h-[350px] rounded-2xl md:max-w-[100%] i">
                 </div>
 
@@ -118,7 +118,7 @@
 
 
 <section class=" py-20">
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
 
         <div class="flex flex-col md:flex-row gap-x-10">
             <div class="w-full md:w-1/3 text-center md:text-start">

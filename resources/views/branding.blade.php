@@ -57,7 +57,7 @@
             <div class="flex flex-col md:w-1/2">
                 <!-- Slika -->
                 <div class="w-full flex justify-start">
-                    <img src="{{ URL::asset('images/services/Branding.png') }}"
+                    <img src="{{ URL::asset('images/services/branding.png') }}"
                         alt="Laptop"
                         class="h-auto rounded-2xl md:max-w-[100%]">
                 </div>

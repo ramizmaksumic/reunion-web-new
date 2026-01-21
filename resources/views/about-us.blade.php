@@ -6,7 +6,7 @@
 
 <section class=" bg-secondary">
 
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-center items-center py-10 md:py-20">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-center items-center py-10 md:py-20">
         <p class="text-center">
             Reunion – marketing i web agencija je tim koji pomaže brendovima da izgrade snažno online prisustvo kroz moderan web dizajn, kvalitetan razvoj web stranica i strateški digitalni marketing. Naš fokus je na rješenjima koja donose konkretne rezultate – više upita, bolju prezentaciju i jasniju komunikaciju s klijentima. Kroz dugogodišnje iskustvo i rad s različitim industrijama, posebno u turizmu, pristupamo svakom projektu sistematično, profesionalno i s punom pažnjom na detalje, kako bismo isporučili web koji izgleda vrhunski i radi još bolje.
         </p>
@@ -20,7 +20,7 @@
 </section>
 <section class="py-5">
 
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between py-10 md:py-10">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between py-10 md:py-10">
         <h2 class="font-heading text-5xl text-center">Zašto baš mi?</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 gap-x-5 mt-16">
             <div class="mt-5"><x-about-card title="10 + godina s nama" text="Više od 10 godina gradimo digitalna rješenja koja pomažu firmama da rastu i budu prepoznatljive na tržištu. Kroz iskustvo na desetinama projekata naučili smo šta zaista donosi rezultate, a šta je samo trend. Upravo zato nudimo provjeren pristup, realne rokove i podršku na koju se možete osloniti – prije, tokom i nakon izrade web stranice." icon="fa regular fa-calendar-days" /></div>
@@ -64,7 +64,7 @@
 </section> -->
 
 <section class="help" x-data="{ step: 1 }">
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-10">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-10">
         <h2 class="font-heading text-5xl text-center">Proces rada</h2>
 
         <!-- Step buttons -->
@@ -103,21 +103,21 @@
             </template>
         </div>
     </div>
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-5">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5">
         <p class="bg-primary rounded-2xl py-8 px-10 font-heading text-3xl text-center text-default">“Vjerujemo da snažna web prisutnost počinje
             razumijevanjem firme — a ne samo izradom stranice.”</p>
     </div>
 </section>
 
 <section class=" bg-secondary py-8 mt-8">
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
         <h2 class="font-heading text-5xl text-center">Naš tim</h2>
         <p class="font-body text-center mt-8 text-xl">Svaki kolektiv pa i društvo počiva na kraju na leđima pojedinca. Ovo su pojedinci na kojima počiva naš kolektiv.</p>
         <grid class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-4">
             <div><x-team-member name="Ramiz Maksumic" position="Web dizajn" image="{{ asset('images/team/default.jpg') }}" /></div>
-            <div><x-team-member name="Irma Kajan" position="Direktorica" image="{{ asset('images/team/irma.jpg') }}" /></div>
+            <div><x-team-member name="Irma Kajan" position="Direktorica" image="{{ asset('images/team/Irma.jpg') }}" /></div>
             <div><x-team-member name="Maher Abu Ayman al Osta" position="Google ads specialist" image="{{ asset('images/team/Maher.jpg') }}" /></div>
-            <div><x-team-member name="Elvis Šabić" position="Fotograf" image="{{ asset('images/team/elvis.jpg') }}" /></div>
+            <div><x-team-member name="Elvis Šabić" position="Fotograf" image="{{ asset('images/team/Elvis.jpg') }}" /></div>
         </grid>
 
     </div>
@@ -125,7 +125,7 @@
 </section>
 
 <section class="py-20">
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
 
         <div class="flex flex-col md:flex-row gap-x-10">
             <div class="w-full md:w-1/3 text-center md:text-start">
