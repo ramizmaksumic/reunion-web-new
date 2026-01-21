@@ -1,16 +1,24 @@
 <div>
-    <section class="flex flex-col items-center py-32">
-        <h1 class="font-heading  text-6xl text-center md:text-9xl">{{$title}}</h1>
-        <div class="flex flex-row justify-between text-2xl mt-5 items-center">
+    <section class="flex flex-col items-center py-16 md:py-32 px-5 text-center">
+        <h1 class="font-heading leading-tight
+                   text-3xl sm:text-4xl md:text-7xl lg:text-9xl
+                   break-words">
+            {{ $title }}
+        </h1>
 
-            <p class="font-heading md:mx-4 mt-8 text-center">{{$description}}</p>
+        <p class="font-heading mt-6 md:mt-8
+                  text-base sm:text-lg md:text-2xl
+                  opacity-80 max-w-3xl">
+            {{ $description }}
+        </p>
 
+        <div class="mt-6 md:mt-8 max-w-full">
+            <span class="font-heading text-sm sm:text-base md:text-xl
+                         break-words">
+                <a href="/" class="text-primary hover:underline">Home</a>
+                <span class="mx-2">&rarr;</span>
+                {{ $title }}
+            </span>
         </div>
-
-        <div class="mt-5">
-            <span class="font-heading text-xl"><a href="/" class="class=" font-heading px-32 py-5 rounded-2xl mt-5"">Home</a> &rarr; {{ $title }}</span>
-        </div>
-
-
     </section>
 </div>
