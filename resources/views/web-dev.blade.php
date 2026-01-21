@@ -21,18 +21,17 @@
                     <div class="w-full flex gap-x-1 mt-3">
 
                         @php
-                        $projectsNumber = 50;
+                        $projectsNumber = 25;
                         $maxBars = 13; // koliko ukupno slotova imaš u progress baru
                         @endphp
 
                         <div class="w-full flex gap-x-1 mt-3">
                             @for ($i = 1; $i <= $maxBars; $i++)
-                                <div
-                                @class([ 'w-[10px] h-5 rounded-xl' , 'bg-primary'=> $i <= $projectsNumber, 'bg-default'=> $i > $projectsNumber,
-                                    ])>
-                        </div>
+                                <div @class([ 'w-[10px] h-5 rounded-xl' , 'bg-primary'=> $i <= $projectsNumber, 'bg-default'=> $i > $projectsNumber,
+                                    ])></div>
                         @endfor
                     </div>
+
 
                 </div>
             </div>

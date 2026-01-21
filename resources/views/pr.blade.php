@@ -9,7 +9,7 @@
 <section class="bg-secondary py-20">
 
 
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5 gap-y-3">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5 gap-y-3">
 
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="col-span-2">
@@ -21,18 +21,17 @@
                     <div class="w-full flex gap-x-1 mt-3">
 
                         @php
-                        $projectsNumber = 27;
+                        $projectsNumber = 10;
                         $maxBars = 13; // koliko ukupno slotova imaš u progress baru
                         @endphp
 
                         <div class="w-full flex gap-x-1 mt-3">
                             @for ($i = 1; $i <= $maxBars; $i++)
-                                <div
-                                @class([ 'w-[10px] h-5 rounded-xl' , 'bg-primary'=> $i <= $projectsNumber, 'bg-default'=> $i > $projectsNumber,
-                                    ])>
-                        </div>
+                                <div @class([ 'w-[10px] h-5 rounded-xl' , 'bg-primary'=> $i <= $projectsNumber, 'bg-default'=> $i > $projectsNumber,
+                                    ])></div>
                         @endfor
                     </div>
+
 
                 </div>
             </div>
