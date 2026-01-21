@@ -18,9 +18,12 @@
         <div class="absolute -top-40 -right-40 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px]"></div>
         <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-40"></div>
 
-        <h1 class="font-heading text-7xl md:text-8xl text-center leading-tight">
+        <h1 class="font-heading text-center leading-tight
+           text-4xl sm:text-5xl md:text-8xl">
             Reunion<br>
-            <span class="text-primary">web & marketing</span>
+            <span class="text-primary block text-3xl sm:text-4xl md:text-7xl">
+                web & marketing
+            </span>
         </h1>
         <p class="mt-10 text-xl md:text-2xl max-w-3xl text-center opacity-80">
             Web i digitalna marketing rješenja
@@ -40,9 +43,16 @@
                 :style="`width: ${(currentIndex + 1) / services.length * 100}%`"></div>
         </div>
 
-        <a href="/kontakt" class="bg-primary text-default font-heading px-25 md:px-32 py-5 rounded-2xl mt-12 text-xl hover:bg-primary/80">
-            Zakaži sastanak &rarr;
+        <a href="/kontakt"
+            class="mt-10 md:mt-12 inline-flex items-center justify-center gap-2
+          bg-primary text-default font-heading rounded-2xl
+          px-8 sm:px-12 md:px-32 py-4 md:py-5
+          text-base sm:text-lg md:text-xl
+          text-center whitespace-nowrap
+          hover:bg-primary/80 transition">
+            Zakaži sastanak <span aria-hidden="true">&rarr;</span>
         </a>
+
     </section>
 </div>
 

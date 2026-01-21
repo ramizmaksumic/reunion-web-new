@@ -10,7 +10,16 @@
         <p class="text-center">
             Reunion – marketing i web agencija je tim koji pomaže brendovima da izgrade snažno online prisustvo kroz moderan web dizajn, kvalitetan razvoj web stranica i strateški digitalni marketing. Naš fokus je na rješenjima koja donose konkretne rezultate – više upita, bolju prezentaciju i jasniju komunikaciju s klijentima. Kroz dugogodišnje iskustvo i rad s različitim industrijama, posebno u turizmu, pristupamo svakom projektu sistematično, profesionalno i s punom pažnjom na detalje, kako bismo isporučili web koji izgleda vrhunski i radi još bolje.
         </p>
-        <a href="/kontakt" class="font-heading text-xl md:text-3xl py-5 px-10 rounded-2xl bg-primary text-default mt-8">Besplatne konsultacije &rarr;</a>
+        <a href="/kontakt"
+            class="mt-8 inline-flex items-center justify-center gap-2
+          font-heading bg-primary text-default rounded-2xl
+          px-6 sm:px-10 py-3 sm:py-4
+          text-base sm:text-xl md:text-3xl
+          text-center whitespace-nowrap
+          hover:bg-primary/80 transition">
+            Besplatne konsultacije <span aria-hidden="true">&rarr;</span>
+        </a>
+
     </div>
 
 
