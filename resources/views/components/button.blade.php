@@ -1,0 +1,1 @@
+<a href="#" class="bg-primary font-heading text-default py-5 px-10 rounded-2xl w-56">Više detalja &rarr;</a>
