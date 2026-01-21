@@ -9,7 +9,7 @@
 <section class="bg-secondary py-20">
 
 
-    <div class="flex flex-col mx-auto px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5 gap-y-3">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5 gap-y-3">
 
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="col-span-2">
