@@ -27,21 +27,24 @@
                     <i class="fa fa-envelope text-2xl"></i>
                     <p class="font-body text-xl">info@reunionagencija.com</p>
                 </div>
-                <div class="flex mt-8 gap-x-5">
-                    <a href="https://www.facebook.com/Reunionmarketingagencija">
-                        <p class="font-heading text-xl">facebook</p>
-
-                    </a>|
-                    <a href="#">
-                        <p class="font-heading text-xl">instagram</p>
-                    </a>|
-                    <a href="#">
-                        <p class="font-heading text-xl">linkedIn</p>
+                <div class="flex flex-wrap justify-center mt-8 gap-x-5 gap-y-2">
+                    <a href="https://www.facebook.com/Reunionmarketingagencija" target="_blank" class="font-heading text-base sm:text-xl hover:text-primary transition">
+                        Facebook
                     </a>
 
+                    <span class="opacity-40 hidden sm:inline">|</span>
 
+                    <a href="https://www.instagram.com/reunion_agencija/" target="_blank" class="font-heading text-base sm:text-xl hover:text-primary transition">
+                        Instagram
+                    </a>
 
+                    <span class="opacity-40 hidden sm:inline">|</span>
+
+                    <a href="https://www.linkedin.com/company/reunion-marketing-agencija/" target="_blank" class="font-heading text-base sm:text-xl hover:text-primary transition">
+                        LinkedIn
+                    </a>
                 </div>
+
             </div>
         </div>
         <div class="w-full overflow-hidden rounded-2xl">
