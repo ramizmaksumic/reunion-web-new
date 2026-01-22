@@ -91,7 +91,7 @@ class ContactController extends Controller
 
         $order = Order::create($data);
 
-        Mail::to('tvojemail@domena.com')->queue(new SendMail($order->id));
+        Mail::to('info@reunionagencija.com')->queue(new SendMail($order->id));
 
         return back()->with('success', 'Vaša narudžba je uspješno poslana!');
     }
