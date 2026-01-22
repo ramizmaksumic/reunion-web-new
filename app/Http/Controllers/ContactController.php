@@ -6,6 +6,7 @@ use App\Mail\SendMail;
 use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 
 class ContactController extends Controller
 {
@@ -91,7 +92,11 @@ class ContactController extends Controller
 
         $order = Order::create($data);
 
-        Mail::to('info@reunionagencija.com')->queue(new SendMail($order->id));
+        try {
+            Mail::to(env('ADMIN_EMAIL'))->queue(new SendMail($order->id));
+        } catch (\Throwable $e) {
+            \Illuminate\Support\Facades\Log::error($e->getMessage());
+        }
 
         return back()->with('success', 'Vaša narudžba je uspješno poslana!');
     }
