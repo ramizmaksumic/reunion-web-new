@@ -9,7 +9,7 @@
             class="rounded-xl h-120 object-cover w-full">
 
     </div>
-    <div class="flex justify-between">
+    <div class="flex justify-between gap-x-2">
         <p class="font-bold">{{$name}}</p>
         <p class="font-light">{{$position}}</p>
     </div>

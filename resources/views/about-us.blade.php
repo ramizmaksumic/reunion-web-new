@@ -119,17 +119,32 @@
 </section>
 
 <section class=" bg-secondary py-8 mt-8">
-    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5 md:mt-5">
+    <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-xl pb-5 md:py-5 md:mt-5">
         <h2 class="font-heading text-5xl text-center">Naš tim</h2>
-        <p class="font-body text-center mt-8 text-xl">Svaki kolektiv pa i društvo počiva na kraju na leđima pojedinca. Ovo su pojedinci na kojima počiva naš kolektiv.</p>
-        <grid class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-4">
-            <div><x-team-member name="Ramiz Maksumic" position="Web dizajn" image="{{ asset('images/team/default.jpg') }}" /></div>
-            <div><x-team-member name="Irma Kajan" position="Direktorica" image="{{ asset('images/team/Irma.jpg') }}" /></div>
-            <div><x-team-member name="Maher Abu Ayman al Osta" position="Google ads specialist" image="{{ asset('images/team/Maher.jpg') }}" /></div>
-            <div><x-team-member name="Elvis Šabić" position="Fotograf" image="{{ asset('images/team/Elvis.jpg') }}" /></div>
-        </grid>
 
+        <p class="font-body text-center mt-8 text-xl">
+            Svaki kolektiv pa i društvo počiva na kraju na leđima pojedinca.
+            Ovo su pojedinci na kojima počiva naš kolektiv.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8 justify-items-center items-center">
+            <x-team-member
+                name="Ramiz Maksumic"
+                position="Web development"
+                image="{{ asset('images/team/default.jpg') }}" />
+
+            <x-team-member
+                name="Irma Kajan"
+                position="Direktorica"
+                image="{{ asset('images/team/Irma.jpg') }}" />
+
+            <x-team-member
+                name="Maher Abu Ayman Al Osta"
+                position="Business Consultant"
+                image="{{ asset('images/team/Maher.jpg') }}" />
+        </div>
     </div>
+
 
 </section>
 
