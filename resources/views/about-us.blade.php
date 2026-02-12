@@ -33,7 +33,7 @@
         <h2 class="font-heading text-5xl text-center">Zašto baš mi?</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 gap-x-5 mt-16">
             <div class="mt-5"><x-about-card title="10 + godina s nama" text="Više od 10 godina gradimo digitalna rješenja koja pomažu firmama da rastu i budu prepoznatljive na tržištu. Kroz iskustvo na desetinama projekata naučili smo šta zaista donosi rezultate, a šta je samo trend. Upravo zato nudimo provjeren pristup, realne rokove i podršku na koju se možete osloniti – prije, tokom i nakon izrade web stranice." icon="fa regular fa-calendar-days" /></div>
-            <div class="mt-5"><x-about-card title="Rezultati, ne predpostavke" text="Kod nas odluke ne nastaju “po osjećaju”, nego na osnovu onoga što donosi stvarne rezultate. Svaki web i svaka kampanja imaju jasan cilj – više upita, bolju prodaju ili jaču vidljivost – a naš fokus je na mjerljivim pokazateljima i konkretnim poboljšanjima. Testiramo, analiziramo i optimizujemo, kako biste dobili rješenje koje radi u praksi, a ne samo lijepo izgleda." icon="fa solid fa-square-poll-vertical" /></div>
+            <div class="mt-5"><x-about-card title="Rezultati, ne pretpostavke" text="Kod nas odluke ne nastaju “po osjećaju”, nego na osnovu onoga što donosi stvarne rezultate. Svaki web i svaka kampanja imaju jasan cilj – više upita, bolju prodaju ili jaču vidljivost – a naš fokus je na mjerljivim pokazateljima i konkretnim poboljšanjima. Testiramo, analiziramo i optimizujemo, kako biste dobili rješenje koje radi u praksi, a ne samo lijepo izgleda." icon="fa solid fa-square-poll-vertical" /></div>
             <div class="mt-5"><x-about-card title="Direktna komunikacija" text="Kod nas nema komplikacija i “prebacivanja” s osobe na osobu – imate direktan kontakt s timom koji radi na Vašem projektu. Jasno dogovaramo korake, rokove i prioritete, te Vas redovno informišemo o napretku. Na taj način štedimo vrijeme, izbjegavamo nesporazume i osiguravamo da dobijete rješenje koje tačno odgovara Vašim ciljevima." icon="fa-regular fa-message" /></div>
             <div class="mt-5"><x-about-card title="Kreativnost & tehnička preciznost" text="Vjerujemo da vrhunski web nastaje tek kada se spoje dobar dizajn i besprijekorna izvedba. Zato gradimo stranice koje vizuelno privlače pažnju, ali su istovremeno brze, stabilne, sigurne i funkcionalne na svim uređajima. Svaki detalj – od tipografije i strukture sadržaja do optimizacije i performansi – radimo precizno, kako bi krajnji rezultat bio i lijep i učinkovit." icon="fa-solid fa-gear" /></div>
 
@@ -82,33 +82,35 @@
                 :class="step === 1 ? 'bg-primary text-default' : 'bg-secondary text-black'"
                 class="flex gap-x-3 mb-5 rounded-2xl font-heading text-2xl items-center py-4 px-6">
                 1. Planiranje
+
             </button>
+
 
             <button @click="step = 2"
                 :class="step === 2 ? 'bg-primary text-default' : 'bg-secondary text-black'"
                 class="flex gap-x-3 mb-5 rounded-2xl font-heading text-2xl items-center py-4 px-6">
-                2. Dizajn & razvoj
+                2. Realizacija
             </button>
 
             <button @click="step = 3"
                 :class="step === 3 ? 'bg-primary text-default' : 'bg-secondary text-black'"
                 class="flex gap-x-3 mb-5 rounded-2xl font-heading text-2xl items-center py-4 px-6">
-                3. Podrška & rast
+                3. Rast & podrška
             </button>
         </div>
 
         <!-- Dynamic content with transitions -->
         <div class="bg-secondary py-5 px-8 flex rounded-2xl relative min-h-[180px]">
             <template x-if="step === 1" x-transition>
-                <p class="absolute pe-3"><b>Planiranje:</b> ovo je inicijalna faza u procesu izrade web stranice. U ovoj fazi se upoznajemo sa klijentom i specifičnostima njegovog posla i niše. Ova faza se sastoji od tri koraka: Inicijalni sastanak, kreiranje pravca djelovanja i potpisivanje ugovora.</p>
+                <p class="absolute pe-3"><b>Planiranje:</b> Svaki projekt započinjemo sistematičnim, školskim pristupom. Istražujemo potrebe klijenta, definiramo ciljeve i analiziramo gdje stoji na tržištu. U ovoj fazi također preciziramo sve potrebne materijale i sadržaje koje klijent treba dostaviti, kako bi strategija mogla biti provedena bez zastoja. Sve ovo pretvaramo u jasnu strategiju djelovanja – bilo da se radi o web stranici, e commerce rješenju, digitalnoj kampanji ili cjelokupnom paketu digitalne prezentacije. Kontinuitet u implementaciji je ključ našeg pristupa, jer vjerujemo da strategija vrijedi samo ako se dosljedno provodi.</p>
             </template>
 
             <template x-if="step === 2" x-transition>
-                <p class="absolute"><b>Dizajn & razvoj:</b> nakon planiranja prelazimo na vizuelni identitet i tehničku realizaciju. Fokus je na korisničkom iskustvu, responzivnosti i brzini.</p>
+                <p class="absolute"><b>Realizacija:</b> U fazi realizacije pretvaramo strategiju u konkretne rezultate. Svaki zadatak provodimo prema jasno definiranom opisu posla i unutar dogovorenih rokova, uz obostrano poštovanje dogovorenih obaveza — od naše strane i od strane klijenta. Tako osiguravamo da sve, od web rješenja i e commerce platformi do digitalnih kampanja i marketinških materijala, bude izvedeno profesionalno i u skladu sa strategijom. Preciznost i dosljednost u ovoj fazi garantiraju da svaki projekt ispunjava ciljeve koje smo zajedno postavili.</p>
             </template>
 
             <template x-if="step === 3" x-transition>
-                <p class="absolute"><b>Podrška & rast:</b> nakon lansiranja sajta pružamo podršku, održavanje i optimizaciju, uz savjetovanje za dalji rast i razvoj poslovanja.</p>
+                <p class="absolute"><b>Rast & podrška:</b> Većinu naših projekata razvijamo kroz dugoročne saradnje, što nam omogućava da osiguramo kontinuiran rast klijenta, pratimo rezultate i prilagođavamo strategiju kako tržište i potrebe klijenta evoluiraju. Nudimo stalnu podršku, optimizaciju i praćenje svih digitalnih kanala, kampanja i web rješenja, kako bi svaki projekt dao maksimalan učinak i postao dio dugoročnog uspjeha. </p>
             </template>
         </div>
     </div>
@@ -120,27 +122,26 @@
 
 <section class=" bg-secondary py-8 mt-8">
     <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-xl pb-5 md:py-5 md:mt-5">
-        <h2 class="font-heading text-5xl text-center">Naš tim</h2>
+        <h2 class="font-heading text-5xl text-center">Voditelji projekata</h2>
 
         <p class="font-body text-center mt-8 text-xl">
-            Svaki kolektiv pa i društvo počiva na kraju na leđima pojedinca.
-            Ovo su pojedinci na kojima počiva naš kolektiv.
+            Stručnjaci koji vode vaše projekte i čine temelj našeg kolektiva, uz podršku tima profesionalaca s bogatim iskustvom u digitalnom marketingu i web rješenjima.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8 justify-items-center items-center">
             <x-team-member
                 name="Ramiz Maksumic"
-                position="Web development"
+                position="Web development & desgin lead"
                 image="{{ asset('images/team/default.jpg') }}" />
 
             <x-team-member
                 name="Irma Kajan"
-                position="Direktorica"
+                position="PR, Event & Digital Marketing Lead"
                 image="{{ asset('images/team/Irma.jpg') }}" />
 
             <x-team-member
-                name="Maher Abu Ayman Al Osta"
-                position="Business Consultant"
+                name="Maher Al Osta"
+                position="Business & Digital Marketing Consultant (Vanjski saradnik)"
                 image="{{ asset('images/team/Maher.jpg') }}" />
         </div>
     </div>

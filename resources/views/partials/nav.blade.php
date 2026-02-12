@@ -1,5 +1,5 @@
 <header class="mt-4" x-data="{ open: false }">
-    <div class="container mx-auto flex items-center justify-between py-2">
+    <div class="container mx-auto flex items-center justify-between py-2 md:shadow-xl md:px-5 md:rounded-2xl">
         <!-- Logo -->
         <div>
             <a href="/"><img src="{{ URL::asset('images/logo.png') }}" alt="Reunion logo" class="w-[200px] md:w-[300px]"></a>

@@ -63,14 +63,15 @@
     </div>
     <div class="flex flex-col font-body md:w-2/3">
         <div class="grid grid-cols-2 gap-5">
-            <a href="{{ route('web-design') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md">Web Design</a>
-            <a href="{{ route('web-dev') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md">Web development</a>
-            <a href="{{ route('social-media') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md">Digitalni marketing</a>
-            <a href="{{ route('google-ads') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md">Google & Meta ads</a>
-            <a href="{{ route('branding') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md">Brending</a>
-            <a href="{{ route('pr-komunikacija') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md">PR & Eventi</a>
+            <a href="{{ route('web-design') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Web Design</a>
+            <a href="{{ route('web-dev') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Web development</a>
+            <a href="{{ route('social-media') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Digitalni marketing</a>
+            <a href="{{ route('google-ads') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Google & Meta ads</a>
+            <a href="{{ route('branding') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Branding & Dizajn</a>
+            <a href="{{ route('pr-komunikacija') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">PR & Eventi</a>
+            <a href="{{ route('team-building') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Team Building</a>
         </div>
-        <p class="mt-5 text-sm">*Ako još uvijek niste sigurni šta tačno trebate - <span class="font-medium">ne brinite, zato smo mi tu.</span></p>
+        <p class="mt-5 text-sm">*Niste sigurni odakle krenuti?  - <span class="font-medium">Počnimo sa strategijom.</span></p>
     </div>
 
 

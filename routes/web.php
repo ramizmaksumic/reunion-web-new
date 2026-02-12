@@ -29,6 +29,7 @@ Route::view('google-ads', 'google-ads')->name('google-ads');
 Route::view('pr-komunikacija', 'pr')->name('pr-komunikacija');
 Route::view('foto-video', 'foto-video')->name('foto-video');
 Route::view('branding', 'branding')->name('branding');
+Route::view('team-building', 'team-building')->name('team-building');
 
 
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');

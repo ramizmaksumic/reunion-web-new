@@ -1,5 +1,7 @@
-<div>
+<div class="">
+    
     <section class="flex flex-col items-center py-16 md:py-32 px-5 text-center">
+        
         <h1 class="font-heading leading-tight
                    text-3xl sm:text-4xl md:text-7xl lg:text-9xl
                    break-words">

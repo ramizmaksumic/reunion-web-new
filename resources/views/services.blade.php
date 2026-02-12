@@ -2,7 +2,7 @@
 
 @section('content')
 
-<x-page-hero-section title="Usluge" description="Detaljan opis usluga Reunion web & marketing agencije" />
+<x-page-hero-section title="Usluge" description="Pojedinačne usluge ili kompletan marketing sistem — vi birate" />
 
 <section class="bg-secondary py-16 md:py-20">
     <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl gap-y-4">
@@ -92,6 +92,24 @@
             <div class="hidden md:block border-b-2 border-black w-1/2 mx-6"></div>
 
             <a href="{{ route('pr-komunikacija') }}"
+                class="bg-primary font-heading text-default py-4 px-8 rounded-2xl
+                      w-full md:w-56 text-center">
+                Više detalja →
+            </a>
+        </div>
+        <!-- Team Building -->
+        <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between gap-4
+                   rounded-2xl p-6 md:p-5
+                   hover:shadow-2xl transition-shadow bg-secondary">
+
+            <h2 class="text-2xl md:text-3xl font-heading text-center md:text-start">
+                Team Building
+            </h2>
+
+            <div class="hidden md:block border-b-2 border-black w-1/2 mx-6"></div>
+
+            <a href="{{ route('team-building') }}"
                 class="bg-primary font-heading text-default py-4 px-8 rounded-2xl
                       w-full md:w-56 text-center">
                 Više detalja →

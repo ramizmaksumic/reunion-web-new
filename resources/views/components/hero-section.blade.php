@@ -50,7 +50,7 @@
           text-base sm:text-lg md:text-xl
           text-center whitespace-nowrap
           hover:bg-primary/80 transition">
-            Zakaži sastanak <span aria-hidden="true">&rarr;</span>
+            Zakažite sastanak <span aria-hidden="true">&rarr;</span>
         </a>
 
     </section>
@@ -64,9 +64,10 @@
                 'Web development',
                 'Digitalni marketing',
                 'Google & Meta ads',
-                'Foto & video',
-                'Branding & Dizajn',
                 'PR & Eventi',
+                'Team Building',
+                'Branding & Dizajn',
+                'Foto & video',
 
             ],
             currentIndex: 0,

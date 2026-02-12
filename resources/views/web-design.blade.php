@@ -2,7 +2,7 @@
 
 @section('content')
 
-<x-page-hero-section title="Web design" description="Detaljan opis usluga Reunion web & marketing agencije" />
+<x-page-hero-section title="Web design" description="Dizajniramo web stranice koje su dio marketing strategije, jasne za korisnike i optimizirane da donose upite, prodaju i povjerenje. " />
 
 
 <!-- Osnovna sekcija -->
@@ -13,7 +13,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="col-span-2">
-                <h2 class="font-heading text-4xl">Ne hvalimo se veličinom, ali...</h2>
+                <h2 class="font-heading text-4xl">Stvaramo jedan po jedan.</h2>
             </div>
             <div id="projects-number" class="col-span-1 flex gap-x-5 items-center">
                 <div>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div>
-                <p class="font-heading text-7xl">{{ $projectsNumber }}</p>
+                <p class="font-heading text-7xl">{{ $projectsNumber }} +</p>
             </div>
         </div>
 
