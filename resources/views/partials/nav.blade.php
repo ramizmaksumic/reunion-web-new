@@ -20,7 +20,7 @@
 
         <!-- Dugme (desktop) -->
         <div class="hidden md:inline-block">
-            <a href="{{ route('digitalni-savjetnik') }}" class="font-heading bg-primary px-8 py-4 rounded-2xl text-default">
+            <a href="{{ route('digitalni-savjetnik') }}" class="font-heading bg-primary text-sm md:text-md px-3 md:px-8 py-4 rounded-2xl text-default">
                 Digitalni savjetnik &rarr;
             </a>
         </div>
@@ -44,6 +44,7 @@
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('portfolio') }}">Portfolio</a></li>
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('post') }}">Novosti</a></li>
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('contact') }}">Kontakt</a></li>
+                <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('contact') }}">Digitalni savjetnik</a></li>
                 <div class="flex text-center mt-10">
                     <ul class="flex font-heading gap-x-2 text-center mx-auto">
                         <li><a href="" class="hover:text-primary">facebook</a></li>|
