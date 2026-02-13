@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "Michroma";
+    src: url("/fonts/michroma/michroma-regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Saira";
+    src: url("/fonts/saira/saira-variable.woff2") format("woff2");
+    font-weight: 100 200 300 400 500 600 700 800 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 @import "tailwindcss";
 
 @tailwind base;

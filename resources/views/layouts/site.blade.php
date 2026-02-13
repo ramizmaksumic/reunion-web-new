@@ -7,9 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Reunion web & marketing agencija se bavi dizajnom i izradom web stranica, web aplikacija, kao i digitalnlim marketingom. Vezane usluge su oglašavanje (Google ads, Facebook & Instagram ads), kao i profesionalna fotografija.">
     <link href="/assets/fonts/fontawesome/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
     <title>{{ config('app.name', 'Reunion web & marketing agencija Mostar') }}</title>
 
