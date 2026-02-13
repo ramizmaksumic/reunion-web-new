@@ -10,6 +10,7 @@
             <ul class="flex gap-3 font-heading font-bold">
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default {{ (request()->routeIs('o-nama')) ? 'bg-primary text-default' : '' }}"><a href="{{ route('o-nama')}}">O nama</a></li>
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default {{ (request()->routeIs('services')) ? 'bg-primary text-default' : '' }}"><a href="{{ route('services') }}">Usluge</a></li>
+                <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default {{ (request()->routeIs('b4b')) ? 'bg-primary text-default' : '' }}"><a href="{{ route('b4b') }}">B4B</a></li>
 
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default {{ (request()->routeIs('portfolio')) ? 'bg-primary text-default' : '' }}"><a href="{{ route('portfolio') }}">Portfolio</a></li>
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default {{ (request()->routeIs('post')) ? 'bg-primary text-default' : '' }}"><a href="{{ route('post') }}">Novosti</a></li>
@@ -38,6 +39,7 @@
             <ul class="flex flex-col w-full h-screen gap-3 font-heading font-bold text-center leading-10 px-5">
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('o-nama') }}">O nama</a></li>
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('services') }}">Usluge</a></li>
+                <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('b4b') }}">B4B</a></li>
 
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('portfolio') }}">Portfolio</a></li>
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('post') }}">Novosti</a></li>

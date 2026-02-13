@@ -2,7 +2,7 @@
 
 @section('content')
 
-<x-page-hero-section title="Google & Meta ads" description="Detaljan opis usluga Reunion web & marketing agencije" />
+<x-page-hero-section title="Google & Meta ads" description="Planiramo, postavljamo i vodimo Google i Meta (Facebook & Instagram) oglase koji su dio šire marketing strategije i fokusirani na upite, prodaju i mjerljive rezultate." />
 
 
 <!-- Osnovna sekcija -->
@@ -13,7 +13,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="col-span-2">
-                <h2 class="font-heading text-4xl">Ne hvalimo se veličinom, ali...</h2>
+                <h2 class="font-heading text-4xl">Stvaramo jedan po jedan.</h2>
             </div>
             <div id="projects-number" class="col-span-1 flex gap-x-5 items-center">
                 <div>
@@ -21,7 +21,7 @@
                     <div class="w-full flex gap-x-1 mt-3">
 
                         @php
-                        $projectsNumber = 18;
+                        $projectsNumber = 200;
                         $maxBars = 13; // koliko ukupno slotova imaš u progress baru
                         @endphp
 
@@ -76,24 +76,33 @@
 
             <!-- Desni dio (tekst) -->
             <div class="flex flex-col justify-start md:w-1/2">
+                <h2 class="font-heading text-3xl font-bold mb-4 text-center md:text-start">Google & Meta ads</h2>
 
                 <div>
                     <p class="font-body px-5 md:px-0 text-center md:text-start">
-                        Za potrebe naših klijenata kreiramo digitalne kampanje - plaćeno oglašavanje.
-                        Iskustvo i znanje nam omogućava da vaše budžete za oglašavanje maksimalno optimiziramo,
-                        a pravilno upravljanje kampanjama doprinosi da imate rezultate i kada one prestanu.
-                        Ako imate budžet za oglašavanje preporučujemo da povjerite zadatak profesionalcima jer
-                        mi možemo za istu vrijednost uraditi puno više od nekoga ko samo „boosta“ oglase. U ovom dijelu usluga možemo ponuditi:
+                        Za potrebe naših klijenata kreiramo digitalne kampanje i plaćeno oglašavanje koje je dio šire marketing strategije.
+                        Dugogodišnje iskustvo i znanje omogućavaju nam da budžete za oglašavanje maksimalno optimiziramo, uz jasan fokus na rezultate.
                     </p>
-                    <ul class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Facebook i Instagram Ads.</li>
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Google Ads.</li>
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>LinkedIn Ads.</li>
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Optimizacija kampanja i budžeta.</li>
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Remarketing i praćenje konverzija.</li>
-
-                    </ul>
+                    <p class="font-body px-5 mt-5 md:px-0 text-center md:text-start">
+                        Pravilno planiranje i upravljanje kampanjama osiguravaju da oglasi donose vrijednost ne samo dok su aktivni, već i nakon što kampanje završe. Ako imate budžet za oglašavanje,
+                        preporučujemo da taj zadatak povjerite profesionalcima — jer za istu investiciju možemo postići znatno više od pukog “boostanja” objava.
+                    </p>
                     <p class="font-body mt-5 px-5 md:px-0 text-center md:text-start">Reunion tim i naši stalni saradnici do sada su radili na 200+ kampanja među njima ističemo: </p>
+                </div>
+                <div class="mt-10">
+                    <h2 class="font-heading text-2xl mb-4 text-center md:text-start">U okviru ove usluge nudimo:</h2>
+                    <ul class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Facebook i Instagram Ads</li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Google Ads</li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>LinkedIn Ads</li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Optimizaciju kampanja i budžeta </li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Dizajn svih ključnih stranica i sekcija </li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Remarketing i praćenje konverzija </li>
+                    </ul>
+                    <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
+                        Reunion tim i naši stalni saradnici imaju dugogodišnje iskustvo u vođenju digitalnih kampanja, a do sada su realizovali 200+ kampanja za klijente iz različitih industrija.
+
+                    </p>
                 </div>
 
             </div>

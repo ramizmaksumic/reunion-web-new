@@ -2,7 +2,7 @@
 
 @section('content')
 
-<x-page-hero-section title="Branding & dizajn" description="Detaljan opis usluga Reunion web & marketing agencije" />
+<x-page-hero-section title="Branding & dizajn" description="Gradimo brendove koji imaju prepoznatljiv identitet, jasnu poruku i vizualnu dosljednost kroz sve kanale komunikacije." />
 
 
 <!-- Osnovna sekcija -->
@@ -13,7 +13,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="col-span-2">
-                <h2 class="font-heading text-4xl">Ne hvalimo se veličinom, ali...</h2>
+                <h2 class="font-heading text-4xl">Stvaramo jedan po jedan</h2>
             </div>
             <div id="projects-number" class="col-span-1 flex gap-x-5 items-center">
                 <div>
@@ -21,7 +21,7 @@
                     <div class="w-full flex gap-x-1 mt-3">
 
                         @php
-                        $projectsNumber = 32;
+                        $projectsNumber = 30;
                         $maxBars = 13; // koliko ukupno slotova imaš u progress baru
                         @endphp
 
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div>
-                <p class="font-heading text-7xl">{{ $projectsNumber }}</p>
+                <p class="font-heading text-7xl">{{ $projectsNumber }} +</p>
             </div>
         </div>
 
@@ -76,21 +76,33 @@
 
             <!-- Desni dio (tekst) -->
             <div class="flex flex-col justify-start md:w-1/2">
+                <h2 class="font-heading text-3xl font-bold mb-4 text-center md:text-start">Branding & dizajn</h2>
 
                 <p class="font-body px-5 md:px-0 text-center md:text-start">
-                    Bilo da je vaša ideja na početku i trebate kompletan grafički identitet
-                    (logo, memorandum, vizit kartice, plakate, banere), radite rebranding nekog dijela, pripremate event i
-                    jednostavno vam treba kreativna, grafička pomoć Reunion tim kreativaca vam može sigurno olakšati posao.
-                    Do sada smo radili brojna grafička rješenja koja su se odnosila na:
+                    Branding je temelj svake ozbiljne komunikacije. On definiše kako brend izgleda, kako govori i kako ga publika doživljava.
+                    Kroz strateški pristup i promišljen dizajn pomažemo brendovima da se jasno pozicioniraju i budu prepoznatljivi na tržištu.
 
                 </p>
-                <ul class="font-body mt-5 px-5 md:px-0 text-center md:text-start">
-                    <li class="mt-5"><i class="fa-solid fa-check mr-2"></i>startUp grafički paket za firme koje tek nastaju,</li>
-                    <li class="mt-5"><i class="fa-solid fa-check mr-2"></i>grafička rješenja za evente, </li>
-                    <li class="mt-5"><i class="fa-solid fa-check mr-2"></i>brand book,</li>
-                    <li class="mt-5"><i class="fa-solid fa-check mr-2"></i>dizajn ambalaže,</li>
-                    <li class="mt-5"><i class="fa-solid fa-check mr-2"></i>druga kreativna grafička rješenja.</li>
-                </ul>
+                <p class="font-body px-5 mt-5 md:px-0 text-center md:text-start">
+                    Vizualni identitet ne posmatramo kao izolovan dizajnerski zadatak, već kao dio šire marketing strategije. Svaki element — od logotipa i boja
+                    do tipografije i grafičkih smjernica — ima svoju ulogu u izgradnji povjerenja i dosljedne komunikacije.
+
+                </p>
+                <div class="mt-10">
+                    <h2 class="font-heading text-2xl mb-4 text-center md:text-start">U okviru ove usluge nudimo:</h2>
+                    <ul class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Razvoj ili redizajn vizualnog identiteta</li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Dizajn logotipa i osnovnih elemenata brenda</li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Definisanje boja, tipografije i grafičkog stila</li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Izradu brand guidelines (brand book) </li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Dizajn promotivnih i digitalnih materijala </li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Prilagodbu dizajna za web, društvene mreže i kampanje </li>
+                    </ul>
+                    <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
+                        Svaki branding projekt radimo planski, u skladu s ciljevima brenda i publikom kojoj se obraća. Cilj nije samo lijep dizajn, već prepoznatljiv i dosljedan brend koji se lako pamti i kojem se vjeruje.
+
+                    </p>
+                </div>
             </div>
         </div>
     </div>

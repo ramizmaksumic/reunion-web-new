@@ -77,21 +77,45 @@
 
             <!-- Desni dio (tekst) -->
             <div class="flex flex-col justify-start md:w-1/2">
-                <h2 class="font-heading text-3xl mb-4 text-center md:text-start">Web design vs. Web development</h2>
+                <h2 class="font-heading text-3xl font-bold mb-4 text-center md:text-start">Web design</h2>
                 <p class="font-body text-lg leading-relaxed text-center px-5 md:text-start md:px-0">
-                    Testing – ovdje možeš upisati svoj sadržaj. Ova kolona zauzima polovinu
-                    širine na većim ekranima, a ispod slike se tagovi uredno raspoređuju.
+                    Web dizajn je faza u kojoj oblikujemo kako vaš web izgleda, komunicira i vodi korisnika.
+                    U ovoj fazi definišemo strukturu, sadržaj, vizualni identitet i sve ključne elemente prije same izrade web stranice.
+
+                </p>
+                <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
+                    Svaki web dizajn započinjemo jasno definisanom strategijom — ciljevima projekta, ciljnom publikom i porukama koje web treba prenijeti.
+                    Na osnovu toga kreiramo dizajn koji ima svrhu, logiku i jasan fokus na korisnika.
+
+                </p>
+                <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
+                    U dizajnu koristimo profesionalni Figma softver, koji omogućava izradu detaljnih vizualnih rješenja do najsitnijih detalja.
+                    Svaka sekcija, boja, tipografija i CTA unaprijed su isplanirani i usklađeni sa strategijom.
+
                 </p>
 
                 <div class="mt-10">
-                    <h2 class="font-heading text-2xl mb-4 text-center md:text-start"># Design</h2>
-                    <p class="font-body text-lg leading-relaxed text-center px-5 md:text-start md:px-0">
-                        Mi u svom procesu dizajniranja koristimo profesionalni <span class="font-bold">Figma</span> softwer. Ona omogućava kreiranje detaljnih nacrta
-                        web stranice ili aplikacije, do najsitnijih detalja. Nakon toga taj dizajn se koristi za razvoj web stranice.
-                        Klijent također dobije pristup svojim Figma fajlovima, kao i printani book kako će njegov web u konačnici izgledati
+                    <h2 class="font-heading text-2xl mb-4 text-center md:text-start">Šta je uključeno u web design fazu</h2>
+                    <ul class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Definisanje strukture i sadržaja web stranice</li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>UX/UI dizajn prilagođen korisnicima</li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Priprema i odabir vizuala i slika</li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Postavljanje CTA elemenata i korisničkih tokova </li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Dizajn svih ključnih stranica i sekcija </li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Dizajn svih ključnih stranica i sekcija </li>
+                    </ul>
+                    <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
+                        Klijent tokom ove faze ima potpun uvid u proces i dobija pristup Figma fajlovima, kao i jasan vizualni prikaz kako će web izgledati u konačnici.
+
                     </p>
-                    <p class="font-body text-lg leading-relaxed text-center px-5 md:text-start md:px-0">
-                        U radu smo
+                </div>
+                <div class="mt-10">
+                    <h2 class="font-heading text-2xl mb-4 text-center md:text-start">Koliko traje web design faza</h2>
+
+                    <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
+                        Web design faza u prosjeku traje 7 do 21 dan, u zavisnosti od obima projekta i definisane strategije.
+                        Cilj je da se sve ključne odluke donesu na vrijeme — prije početka realizacije.
+
                     </p>
                 </div>
 

@@ -4,7 +4,7 @@
 
 
 
-<x-page-hero-section title="Portfolio" description="pogledajte neke od naših radova" />
+<x-page-hero-section title="Portfolio" description="Pogledajte projekte koje smo stvarali — jedan po jedan, s razlogom." />
 
 <section class="bg-secondary md:py-20">
 

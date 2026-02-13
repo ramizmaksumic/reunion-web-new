@@ -2,7 +2,7 @@
 
 @section('content')
 
-<x-page-hero-section title="Web development" description="Detaljan opis usluga Reunion web & marketing agencije" />
+<x-page-hero-section title="Web development" description="Razvijamo web stranice koje su tehnički pouzdane, brze i spremne za dugoročni marketing, nadogradnje i rast biznisa" />
 
 
 <!-- Osnovna sekcija -->
@@ -13,7 +13,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="col-span-2">
-                <h2 class="font-heading text-4xl">Ne hvalimo se veličinom, ali...</h2>
+                <h2 class="font-heading text-4xl">Stvaramo jedan po jedan.</h2>
             </div>
             <div id="projects-number" class="col-span-1 flex gap-x-5 items-center">
                 <div>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div>
-                <p class="font-heading text-7xl">{{ $projectsNumber }}</p>
+                <p class="font-heading text-7xl">{{ $projectsNumber }} +</p>
             </div>
         </div>
 
@@ -81,24 +81,52 @@
             <div class="flex flex-col justify-start md:w-1/2">
 
                 <div>
-                    <h2 class="font-heading text-2xl mb-4 text-center px-5 md:px-0 md:text-start"># Development (web stranice & web aplikacije)</h2>
+                    <h2 class="font-heading text-3xl font-bold mb-4 text-center px-5 md:px-0 md:text-start">Web development</h2>
                     <p class="font-body text-lg leading-relaxed text-center px-5 md:text-start md:px-0">
-                        Izrada web stranica je jedna od naših usluga koje najčešće radimo za klijente.
-                        Radili smo od prezentacijske stranice za mikro firme do velikih korporativnih stranica sa integrisanim eCommerce sistemima.
-                        Za klijente koji prvi put rade web stranice, kao i za one koji žele novu. Naša prednost u odnosu na
-                        IT firme koje se bave izradom stranica je ta šta možemo ponuditi kompletnu izradu sadržaja od optimiziranih naslova,
-                        blogova do kvalitene foto i video produkacije. Mi radimo stranice koje osim estetske komponente imaju svoju prodajnu vrijednost.
-                        Reunion web standard kojeg se pridržavamo pri izradi garantuje stranice koje rade za vas i koje su ustvari vaš prodajni kanal:
-                    </p>
-                    <p class="text-center md:text-start mt-5 font-body">Reunion web standard znači: </p>
-                    <ul class="px-5  md:px-0 text-center md:text-start mt-5 font-body">
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Moderan i funkcionalan dizajn izgled koji prati trendove, ali prije svega služi korisniku.</li>
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Vrhunska brzina i performanse brze, stabilne i tehnički optimizirane stranice.</li>
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Optimizacija sadržaja SEO postavke, logična struktura i jasne poruke koje donose rezultate.</li>
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Stalna tehnička podrška i održavanje pratimo, ažuriramo i brinemo se da sve radi savršeno.</li>
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>E-commerce i napredna rješenja sofisticirani webshopovi, integracije i prilagođeni softveri razvijeni za specifične potrebe.</li>
+                        Web development je faza u kojoj odobreni dizajn pretvaramo u brzu, stabilnu i funkcionalnu web stranicu.
+                        U ovoj fazi fokus je na tehničkoj izvedbi, performansama i dugoročnoj održivosti weba.
 
-                    </ul>
+                    </p>
+                    <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
+                        Svaki web razvijamo s ciljem da bude pouzdan, siguran i spreman za rast. Kod i struktura su prilagođeni budućim nadogradnjama, marketing kampanjama i sadržajnim promjenama.
+
+                    </p>
+                    <div class="mt-10">
+                        <h2 class="font-heading text-2xl mb-4 text-center md:text-start">Šta je uključeno u web development fazu</h2>
+                        <ul class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
+                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Front-end i back-end razvoj web stranice</li>
+                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Responsivna prilagodba za sve uređaje</li>
+                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Optimizacija brzine i performansi</li>
+                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Sigurnosne postavke i osnovna zaštita </li>
+                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>SEO-tehnička osnova </li>
+                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Integracija kontakt formi i funkcionalnosti </li>
+                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Priprema za daljnji marketing i sadržaj </li>
+                        </ul>
+                        <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
+                            Tokom razvoja redovno testiramo funkcionalnost, stabilnost i korisničko iskustvo kako bi web bio spreman za realnu upotrebu od prvog dana.
+
+                        </p>
+                    </div>
+                    <div class="mt-10">
+                        <h2 class="font-heading text-2xl mb-4 text-center md:text-start">Koliko traje web development faza?</h2>
+
+                        <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
+                            Web development faza u prosjeku traje 14 do 30 dana, u zavisnosti od kompleksnosti projekta i obima funkcionalnosti.
+                            Cilj ove faze je da web bude tehnički stabilan i spreman za korištenje, bez naknadnih improvizacija.
+
+
+                        </p>
+                    </div>
+                    <div class="mt-10">
+                        <h2 class="font-heading text-2xl mb-4 text-center md:text-start">Nakon lansiranja</h2>
+
+                        <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
+                            Po završetku razvoja, web prolazi završnu provjeru i pripremu za lansiranje.
+                            Po potrebi, nudimo podršku, održavanje i daljnje unapređenje u sklopu kontinuiranog marketing rješenja.
+
+
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

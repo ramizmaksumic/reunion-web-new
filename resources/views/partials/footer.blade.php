@@ -11,7 +11,7 @@
 
         <!-- Kontakt podaci -->
         <div class="md:text-right font-heading">
-            <h4 class="text-2xl mb-4">Kontakt podaci</h4>
+            <p class="text-2xl mb-4">Kontakt podaci</p>
             <p class="font-heading text-sm">Adresa: Blagaj bb, 88 000 Mostar</p>
             <p class="font-heading text-sm">Telefon: +387 61 091 118</p>
             <p class="font-heading text-sm">Telefon: +387 61 910 161</p>

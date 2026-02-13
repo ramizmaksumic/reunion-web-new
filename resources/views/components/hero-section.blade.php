@@ -32,11 +32,11 @@
         </p>
 
         <div class="flex flex-row text-2xl mt-10 items-center">
-            <button @click="prev" class="absolute left-8 md:left-160 text-5xl cursor-pointer hover:text-primary">&larr;</button>
+            <button @click="prev" class=" left-80 md:left-160 text-5xl cursor-pointer hover:text-primary">&larr;</button>
 
             <p class="font-heading mx-auto text-center font-bold" x-text="services[currentIndex]"></p>
 
-            <button @click="next" class="absolute right-8 md:right-160 text-5xl cursor-pointer hover:text-primary">&rarr;</button>
+            <button @click="next" class=" right-8 md:right-160 text-5xl cursor-pointer hover:text-primary">&rarr;</button>
         </div>
         <div class="mt-5 w-48 h-1 bg-secondary rounded-full overflow-hidden">
             <div class="h-full bg-primary transition-all duration-300"

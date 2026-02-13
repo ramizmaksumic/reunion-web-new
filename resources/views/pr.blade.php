@@ -2,7 +2,7 @@
 
 @section('content')
 
-<x-page-hero-section title="PR & Eventi" description="Detaljan opis usluga Reunion web & marketing agencije" />
+<x-page-hero-section title="PR & Eventi" description="Planiramo i realizujemo PR aktivnosti i evente koji jačaju imidž brenda, grade povjerenje i ostavljaju dugoročan utisak — online i offline." />
 
 
 <!-- Osnovna sekcija -->
@@ -13,7 +13,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="col-span-2">
-                <h2 class="font-heading text-4xl">Ne hvalimo se veličinom, ali...</h2>
+                <h2 class="font-heading text-4xl">Stvaramo jedan po jedan.</h2>
             </div>
             <div id="projects-number" class="col-span-1 flex gap-x-5 items-center">
                 <div>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div>
-                <p class="font-heading text-7xl">{{ $projectsNumber }}</p>
+                <p class="font-heading text-7xl">{{ $projectsNumber }} +</p>
             </div>
         </div>
 
@@ -56,7 +56,7 @@
             <div class="flex flex-col md:w-1/2">
                 <!-- Slika -->
                 <div class="w-full flex justify-start">
-                    <img src="{{ URL::asset('images/services/laptop.png') }}"
+                    <img src="{{ URL::asset('images/services/pr-eventi.jpg') }}"
                         alt="Laptop"
                         class="h-auto rounded-2xl md:max-w-[100%]">
                 </div>
@@ -73,31 +73,34 @@
 
             <!-- Desni dio (tekst) -->
             <div class="flex flex-col justify-start md:w-1/2">
+                <h2 class="font-heading text-3xl font-bold mb-4 text-center md:text-start">PR & Eventi</h2>
 
                 <div>
                     <p class="font-body px-5 md:px-0 text-center md:text-start">
-                        Javna komunikacija i događaji i dalje imaju važnu ulogu u izgradnji reputacije brenda kako u digitalnom prostoru,
-                        tako i van njega. Kroz strateški PR i pažljivo osmišljene evente pomažemo brendovima da budu vidljivi, prepoznati i kredibilni.
+                        Javna komunikacija i događaji i dalje imaju važnu ulogu u izgradnji reputacije brenda — kako u digitalnom prostoru, tako i van njega.
+                        Kroz strateški PR i pažljivo osmišljene evente pomažemo brendovima
+                        da budu vidljivi, prepoznati i kredibilni, ali i da ostvare direktan kontakt sa svojom publikom.
+                    <p class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
+                        Kvalitetno plasiran PR sadržaj u relevantnim medijima često ima dugoročniji efekat od kratkotrajnih kampanja, dok dobro organiziran događaj stvara iskustvo koje se pamti, jača povjerenje
+                        i gradi odnos s brendom. Upravo zato ovaj segment posmatramo kao spoj komunikacije, iskustva i reputacije.
                     </p>
                     <p class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
-                        Kvalitetno plasiran PR sadržaj u relevantnim medijima često ima dugoročniji efekat od kratkotrajnih kampanja, dok dobro organiziran
-                        događaj ostavlja snažan utisak i gradi povjerenje. Upravo zato ovaj segment posmatramo kao spoj komunikacije, iskustva i reputacije.
+                        Evente ne posmatramo kao izolovane aktivnosti, već kao dio šire PR i marketing strategije — sa jasnom porukom, ciljevima i publikom kojoj se obraćamo.
                     </p>
-                    <p class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
-                        U okviru ove usluge nudimo:
-                    </p>
-
+                </div>
+                <div class="mt-10">
+                    <h2 class="font-heading text-2xl mb-4 text-center md:text-start">U okviru ove usluge nudimo:</h2>
                     <ul class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
                         <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>PR strategiju, pisanje i distribuciju saopštenja</li>
                         <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Medijske objave i zakup prostora</li>
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Organizaciju i vođenje događaja (seminari, edukacije, otvorenja, godišnjice, sajmovi, team building)</li>
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Foto i video podršku, grafičku pripremu i tehničku realizaciju</li>
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>PR strategiju, pisanje i distribuciju saopštenja</li>
-                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Koordinaciju medija i kompletan event menadžment</li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Planiranje, organizaciju i vođenje događaja
+                            (seminari, edukacije, otvorenja, godišnjice, sajmovi, team building)- možda da vodi link na TB starnicu ako može.
+                        </li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Koncept događaja, scenarij i produkciju</li>
+                        <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Foto i video podršku, grafičku pripremu i tehničku realizaciju </li>
+
                     </ul>
-                    <p class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
-                        Svaki projekt realizujemo planski, s jasnom porukom i ciljem koji brend želi postići.
-                    </p>
+
                 </div>
 
             </div>

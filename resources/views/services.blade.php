@@ -50,7 +50,7 @@
                    hover:shadow-2xl transition-shadow bg-secondary">
 
             <h2 class="text-2xl md:text-3xl font-heading text-center md:text-start">
-                Digitalni marketing
+                Social media marketing
             </h2>
 
             <div class="hidden md:block border-b-2 border-black w-1/2 mx-6"></div>
@@ -97,24 +97,7 @@
                 Više detalja →
             </a>
         </div>
-        <!-- Team Building -->
-        <div
-            class="flex flex-col md:flex-row md:items-center md:justify-between gap-4
-                   rounded-2xl p-6 md:p-5
-                   hover:shadow-2xl transition-shadow bg-secondary">
 
-            <h2 class="text-2xl md:text-3xl font-heading text-center md:text-start">
-                Team Building
-            </h2>
-
-            <div class="hidden md:block border-b-2 border-black w-1/2 mx-6"></div>
-
-            <a href="{{ route('team-building') }}"
-                class="bg-primary font-heading text-default py-4 px-8 rounded-2xl
-                      w-full md:w-56 text-center">
-                Više detalja →
-            </a>
-        </div>
         <!-- Brending & dizajn -->
         <div
             class="flex flex-col md:flex-row md:items-center md:justify-between gap-4
@@ -133,29 +116,6 @@
                 Više detalja →
             </a>
         </div>
-        <!-- Foto & Video -->
-        <div
-            class="flex flex-col md:flex-row md:items-center md:justify-between gap-4
-                   rounded-2xl p-6 md:p-5
-                   hover:shadow-2xl transition-shadow bg-secondary">
-
-            <h2 class="text-2xl md:text-3xl font-heading text-center md:text-start">
-                Foto & Video
-            </h2>
-
-            <div class="hidden md:block border-b-2 border-black w-1/2 mx-6"></div>
-
-            <a href="{{ route('foto-video') }}"
-                class="bg-primary font-heading text-default py-4 px-8 rounded-2xl
-                      w-full md:w-56 text-center">
-                Više detalja →
-            </a>
-        </div>
-
-
-
-
-
 
     </div>
 </section>

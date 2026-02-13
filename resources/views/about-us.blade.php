@@ -2,7 +2,7 @@
 
 @section('content')
 
-<x-page-hero-section title="O nama" description="Detaljan opis Reunion web & marketing agencije" />
+<x-page-hero-section title="O nama" description="10+ godina pretvaramo ideje u web rješenja i digitalne kampanje koje daju rezultate." />
 
 <section class=" bg-secondary">
 
@@ -102,21 +102,20 @@
         <!-- Dynamic content with transitions -->
         <div class="bg-secondary py-5 px-8 flex rounded-2xl relative min-h-[180px]">
             <template x-if="step === 1" x-transition>
-                <p class="absolute pe-3"><b>Planiranje:</b> Svaki projekt započinjemo sistematičnim, školskim pristupom. Istražujemo potrebe klijenta, definiramo ciljeve i analiziramo gdje stoji na tržištu. U ovoj fazi također preciziramo sve potrebne materijale i sadržaje koje klijent treba dostaviti, kako bi strategija mogla biti provedena bez zastoja. Sve ovo pretvaramo u jasnu strategiju djelovanja – bilo da se radi o web stranici, e commerce rješenju, digitalnoj kampanji ili cjelokupnom paketu digitalne prezentacije. Kontinuitet u implementaciji je ključ našeg pristupa, jer vjerujemo da strategija vrijedi samo ako se dosljedno provodi.</p>
+                <p class="pe-3"><b>Planiranje:</b> Svaki projekt započinjemo sistematičnim, školskim pristupom. Istražujemo potrebe klijenta, definiramo ciljeve i analiziramo gdje stoji na tržištu. U ovoj fazi također preciziramo sve potrebne materijale i sadržaje koje klijent treba dostaviti, kako bi strategija mogla biti provedena bez zastoja. Sve ovo pretvaramo u jasnu strategiju djelovanja – bilo da se radi o web stranici, e commerce rješenju, digitalnoj kampanji ili cjelokupnom paketu digitalne prezentacije. Kontinuitet u implementaciji je ključ našeg pristupa, jer vjerujemo da strategija vrijedi samo ako se dosljedno provodi.</p>
             </template>
 
             <template x-if="step === 2" x-transition>
-                <p class="absolute"><b>Realizacija:</b> U fazi realizacije pretvaramo strategiju u konkretne rezultate. Svaki zadatak provodimo prema jasno definiranom opisu posla i unutar dogovorenih rokova, uz obostrano poštovanje dogovorenih obaveza — od naše strane i od strane klijenta. Tako osiguravamo da sve, od web rješenja i e commerce platformi do digitalnih kampanja i marketinških materijala, bude izvedeno profesionalno i u skladu sa strategijom. Preciznost i dosljednost u ovoj fazi garantiraju da svaki projekt ispunjava ciljeve koje smo zajedno postavili.</p>
+                <p class="pe-3"><b>Realizacija:</b> U fazi realizacije pretvaramo strategiju u konkretne rezultate. Svaki zadatak provodimo prema jasno definiranom opisu posla i unutar dogovorenih rokova, uz obostrano poštovanje dogovorenih obaveza — od naše strane i od strane klijenta. Tako osiguravamo da sve, od web rješenja i e commerce platformi do digitalnih kampanja i marketinških materijala, bude izvedeno profesionalno i u skladu sa strategijom. Preciznost i dosljednost u ovoj fazi garantiraju da svaki projekt ispunjava ciljeve koje smo zajedno postavili.</p>
             </template>
 
             <template x-if="step === 3" x-transition>
-                <p class="absolute"><b>Rast & podrška:</b> Većinu naših projekata razvijamo kroz dugoročne saradnje, što nam omogućava da osiguramo kontinuiran rast klijenta, pratimo rezultate i prilagođavamo strategiju kako tržište i potrebe klijenta evoluiraju. Nudimo stalnu podršku, optimizaciju i praćenje svih digitalnih kanala, kampanja i web rješenja, kako bi svaki projekt dao maksimalan učinak i postao dio dugoročnog uspjeha. </p>
+                <p class="pe-3"><b>Rast & podrška:</b> Većinu naših projekata razvijamo kroz dugoročne saradnje, što nam omogućava da osiguramo kontinuiran rast klijenta, pratimo rezultate i prilagođavamo strategiju kako tržište i potrebe klijenta evoluiraju. Nudimo stalnu podršku, optimizaciju i praćenje svih digitalnih kanala, kampanja i web rješenja, kako bi svaki projekt dao maksimalan učinak i postao dio dugoročnog uspjeha. </p>
             </template>
         </div>
     </div>
     <div class="flex flex-col mx-auto px-5 md:px-16 max-w-screen-2xl justify-between pb-5 md:py-5">
-        <p class="bg-primary rounded-2xl py-8 px-10 font-heading text-3xl text-center text-default">“Vjerujemo da snažna web prisutnost počinje
-            razumijevanjem firme — a ne samo izradom stranice.”</p>
+        <p class="bg-primary rounded-2xl py-8 px-10 font-heading text-3xl text-center text-default">Mi planiramo, vodimo i realizujemo marketing za biznise koji žele stabilan rast i jasnu strategiju. </p>
     </div>
 </section>
 
@@ -131,7 +130,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8 justify-items-center items-center">
             <x-team-member
                 name="Ramiz Maksumic"
-                position="Web development & desgin lead"
+                position="Web Development & Desgin Lead"
                 image="{{ asset('images/team/default.jpg') }}" />
 
             <x-team-member
