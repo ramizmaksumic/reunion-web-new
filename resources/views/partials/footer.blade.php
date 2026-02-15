@@ -2,7 +2,22 @@
     <div class="max-w-screen-2xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
         <!-- Logo + opis -->
         <div>
-            <img src="{{ URL::asset('images/logo-white.png') }}" alt="Reunion logo" width="250" class="mb-4">
+            <picture>
+                <!-- mobile -->
+                <source
+                    srcset="{{ URL::asset('images/Reunion-footer-logo-mobile.png') }}"
+                    media="(max-width: 768px)">
+
+                <!-- desktop fallback -->
+                <img
+                    src="{{ URL::asset('images/Reunion-footer-logo-mobile.png') }}"
+                    width="300"
+                    height="102"
+                    alt="Reunion logo"
+                    class="w-[200px] h-[68px]  md:w-[300px] md:h-[102px]"
+                    loading="eager"
+                    fetchpriority="high">
+            </picture>
             <p class="text-sm leading-relaxed max-w-md font-body">
                 Reunion web & marketing agencija se bavi dizajnom i izradom web stranica, web aplikacija, kao i digitalnlim marketingom.
                 Vezane usluge su oglašavanje (Google ads, Facebook & Instagram ads), kao i profesionalna fotografija.

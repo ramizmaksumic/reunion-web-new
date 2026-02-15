@@ -120,10 +120,12 @@
         <div
             class="carousel flex flex-col font-body w-full md:w-2/3"
             x-data="{ active: 0, items: [
-                '{{ URL::asset('/images/Hercegovinalijek.png') }}',
-                '{{ URL::asset('/images/Gaj.png') }}',
-                '{{ URL::asset('/images/Nela.png') }}',
-                '{{ URL::asset('/images/zou silic.png') }}'
+                '{{ URL::asset('/images/hercegovinalijek.webp') }}',
+                '{{ URL::asset('/images/zou-silic.webp') }}',
+                '{{ URL::asset('/images/hotel-swiss-plus.webp') }}',
+                '{{ URL::asset('/images/perfectfit.webp') }}',
+                '{{ URL::asset('/images/novaprica.webp') }}',
+                '{{ URL::asset('/images/autoprevoz.webp') }}',
             ] }">
             <!-- Slike -->
             <div class="flex justify-between">
@@ -131,8 +133,9 @@
                     <img
                         :src="item"
                         x-show="active === index"
-                        class="rounded-2xl w-full md:w-full transition duration-500 ease-in-out"
-                        alt="radovi">
+                        class="rounded-2xl w-full  md:w-full transition duration-500 ease-in-out"
+                        alt="radovi"
+                        loading="lazy">
                 </template>
             </div>
 

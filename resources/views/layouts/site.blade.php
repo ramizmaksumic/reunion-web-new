@@ -15,12 +15,12 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-sans antialiased">
-    <div class="min-h-screen">
+<body class="font-sans antialiased overflow-x-hidden">
+    <div class="min-h-screen flex flex-col">
         {{-- ovdje ide tvoj header/navbar --}}
         @include('partials.nav')
 
-        <main>
+        <main class="flex-1">
             @yield('content')
         </main>
 

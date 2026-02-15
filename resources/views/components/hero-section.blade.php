@@ -31,10 +31,10 @@
 
         </p>
 
-        <div class="flex flex-row text-2xl mt-10 items-center">
+        <div class="flex flex-row text-2xl mt-10 items-center min-h-[80px]">
             <button @click="prev" class=" left-80 md:left-160 text-5xl cursor-pointer hover:text-primary">&larr;</button>
 
-            <p class="font-heading mx-auto text-center font-bold" x-text="services[currentIndex]"></p>
+            <p class="font-heading mx-auto text-center font-bold w-[250px]" x-text="services[currentIndex]"></p>
 
             <button @click="next" class=" right-8 md:right-160 text-5xl cursor-pointer hover:text-primary">&rarr;</button>
         </div>

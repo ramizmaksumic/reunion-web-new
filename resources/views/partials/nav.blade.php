@@ -2,7 +2,24 @@
     <div class="container mx-auto flex items-center justify-between py-2 md:shadow-xl md:px-5 md:rounded-2xl">
         <!-- Logo -->
         <div>
-            <a href="/"><img src="{{ URL::asset('images/logo.png') }}" alt="Reunion logo" class="w-[200px] md:w-[300px]"></a>
+            <a href="/">
+                <picture>
+                    <!-- mobile -->
+                    <source
+                        srcset="{{ URL::asset('images/Reunion-logo-mobile.png') }}"
+                        media="(max-width: 768px)">
+
+                    <!-- desktop fallback -->
+                    <img
+                        src="{{ URL::asset('images/logo.png') }}"
+                        width="300"
+                        height="102"
+                        alt="Reunion logo"
+                        class="w-[200px] h-full md:w-[300px]"
+                        loading="eager"
+                        fetchpriority="high">
+                </picture>
+            </a>
         </div>
 
         <!-- Navigacija (desktop) -->
@@ -20,14 +37,18 @@
 
         <!-- Dugme (desktop) -->
         <div class="hidden md:inline-block">
-            <a href="{{ route('digitalni-savjetnik') }}" class="font-heading bg-primary text-sm md:text-md px-3 md:px-8 py-4 rounded-2xl text-default">
+            <a href="{{ route('digitalni-savjetnik') }}" class="font-heading bg-primary 
+text-xs sm:text-sm md:text-sm lg:text-md 
+px-3 sm:px-4 md:px-4 lg:px-8 
+py-2 md:py-3 lg:py-4 
+rounded-2xl text-default whitespace-nowrap">
                 Digitalni savjetnik &rarr;
             </a>
         </div>
 
         <!-- Hamburger (mobile) -->
         <div class="md:hidden">
-            <button @click="open = ! open" class="font-heading px-8 py-4 rounded-2xl text-default cursor-pointer">
+            <button @click="open = ! open" class="font-heading px-8 py-4 rounded-2xl text-default cursor-pointer" aria-label="mobile-btn">
                 <i class="fa-solid fa-bars text-black text-2xl"></i>
             </button>
         </div>
@@ -36,7 +57,7 @@
     <!-- Mobilni meni -->
     <div x-show="open" x-transition class="md:hidden">
         <nav>
-            <ul class="flex flex-col w-full h-screen gap-3 font-heading font-bold text-center leading-10 px-5">
+            <ul class="flex flex-col w-full min-h-screen gap-3 font-heading font-bold text-center leading-10 px-5">
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('o-nama') }}">O nama</a></li>
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('services') }}">Usluge</a></li>
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('b4b') }}">B4B</a></li>
