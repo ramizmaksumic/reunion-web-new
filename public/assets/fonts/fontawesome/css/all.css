@@ -10903,7 +10903,7 @@
     font-family: "Font Awesome 7 Free";
     font-style: normal;
     font-weight: 900;
-    font-display: swap;
+    font-display: block;
     src: url("../webfonts/fa-solid-900.woff2");
 }
 .fas {
@@ -10926,7 +10926,7 @@
 }
 @font-face {
     font-family: "Font Awesome 5 Free";
-    font-display: swap;
+    font-display: block;
     font-weight: 900;
     src: url("../webfonts/fa-solid-900.woff2") format("woff2");
 }
@@ -10938,7 +10938,7 @@
 }
 @font-face {
     font-family: "FontAwesome";
-    font-display: swap;
+    font-display: block;
     src: url("../webfonts/fa-solid-900.woff2") format("woff2");
 }
 @font-face {
