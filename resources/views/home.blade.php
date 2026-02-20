@@ -63,9 +63,9 @@
     </div>
     <div class="flex flex-col font-body md:w-2/3">
         <div class="grid grid-cols-2 gap-5">
-            <a href="{{ route('web-design') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Web Design</a>
-            <a href="{{ route('web-dev') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Web development</a>
-            <a href="{{ route('social-media') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Social media marketing</a>
+            <a href="{{ route('web-design') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Izrada web stranica</a>
+            <a href="{{ route('web-dev') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Izrada web aplikacija</a>
+            <a href="{{ route('social-media') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Digitalni marketing</a>
             <a href="{{ route('google-ads') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Google & Meta ads</a>
             <a href="{{ route('branding') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">Branding & Dizajn</a>
             <a href="{{ route('pr-komunikacija') }}" class="bg-secondary py-4 px-8 rounded-2xl gap-cols-4 text-center hover:shadow-md hover:bg-primary hover:text-white">PR & Eventi</a>
@@ -128,12 +128,12 @@
                 '{{ URL::asset('/images/autoprevoz.webp') }}',
             ] }">
             <!-- Slike -->
-            <div class="flex justify-between">
+            <div class="relative w-full h-[380px] md:h-[460px] overflow-hidden">
                 <template x-for="(item, index) in items" :key="index">
                     <img
                         :src="item"
                         x-show="active === index"
-                        class="rounded-2xl w-full  md:w-full transition duration-500 ease-in-out"
+                        class="absolute inset-0 w-full h-full object-cover rounded-2xl transition duration-500"
                         alt="radovi"
                         loading="lazy">
                 </template>

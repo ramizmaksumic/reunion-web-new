@@ -7,11 +7,14 @@ use Livewire\Component;
 class Layout extends Component
 {
     public string $activeSection = 'dashboard';
+    public $editingPostId = null;
+
     protected $listeners = ['navigate' => 'setSection',];
 
     public function setSection(string $section)
     {
         $this->activeSection = $section;
+        $this->editingPostId = $data['id'] ?? null;
     }
     public function render()
     {

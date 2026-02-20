@@ -1,17 +1,59 @@
 @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: "Michroma";
-    src: url("/assets/fonts/michroma/michroma-regular.woff2") format("woff2");
-    font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-weight: 400;
+    src: url("../fonts/michroma/michroma-v21-latin-ext-regular.woff2")
+        format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* saira-regular - latin-ext */
 @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: "Saira";
-    src: url("/assets/fonts/saira/saira-variable.woff2") format("woff2");
-    font-weight: 100 900;
     font-style: normal;
-    font-display: swap;
+    font-weight: 400;
+    src: url("../fonts/saira/saira-v23-latin-ext-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* saira-500 - latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Saira";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/saira/saira-v23-latin-ext-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* saira-600 - latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Saira";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/saira/saira-v23-latin-ext-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* saira-700 - latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Saira";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/saira/saira-v23-latin-ext-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* saira-800 - latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Saira";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/saira/saira-v23-latin-ext-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* saira-900 - latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Saira";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/saira/saira-v23-latin-ext-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @import "tailwindcss";
@@ -30,8 +72,8 @@
         "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
-    --font-heading: "Michroma";
-    --font-body: "Saira";
+    --font-heading: "Michroma", sans-serif;
+    --font-body: "Saira", sans-serif;
 
     --color-primary: #5230e5;
     --color-secondary: #f5f5f5;

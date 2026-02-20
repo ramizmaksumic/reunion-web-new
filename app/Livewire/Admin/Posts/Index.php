@@ -60,11 +60,14 @@ class Index extends Component
     {
         $this->resetForm();
         $this->showModal = true;
+        $this->dispatch('openEditor', body: '');
     }
 
     public function edit($id)
     {
         $post = Post::with('tags')->findOrFail($id);
+
+        $this->dispatch('openEditor', body: $this->body);
 
         $this->tagIds = $post->tags->pluck('id')->toArray();
 

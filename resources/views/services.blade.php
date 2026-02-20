@@ -14,7 +14,7 @@
                    hover:shadow-2xl transition-shadow bg-secondary">
 
             <h2 class="text-2xl md:text-3xl font-heading text-center md:text-start">
-                Web design
+                Izrada web stranica
             </h2>
 
             <div class="hidden md:block border-b-2 border-black w-1/2 mx-6"></div>
@@ -32,7 +32,7 @@
                    hover:shadow-2xl transition-shadow bg-secondary">
 
             <h2 class="text-2xl md:text-3xl font-heading text-center md:text-start">
-                Web development
+                Izrada web aplikacija
             </h2>
 
             <div class="hidden md:block border-b-2 border-black w-1/2 mx-6"></div>
@@ -50,7 +50,7 @@
                    hover:shadow-2xl transition-shadow bg-secondary">
 
             <h2 class="text-2xl md:text-3xl font-heading text-center md:text-start">
-                Social media marketing
+                Digitalni marketing
             </h2>
 
             <div class="hidden md:block border-b-2 border-black w-1/2 mx-6"></div>

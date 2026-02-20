@@ -19,7 +19,7 @@
         <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-40"></div>
 
         <h1 class="font-heading text-center leading-tight
-           text-4xl sm:text-5xl md:text-8xl">
+           text-6xl sm:text-5xl md:text-9xl">
             Reunion<br>
             <span class="text-primary block text-3xl sm:text-4xl md:text-7xl">
                 web & marketing
@@ -31,12 +31,30 @@
 
         </p>
 
-        <div class="flex flex-row text-2xl mt-10 items-center min-h-[80px]">
-            <button @click="prev" class=" left-80 md:left-160 text-5xl cursor-pointer hover:text-primary">&larr;</button>
+        <div class="grid grid-cols-3 items-center mt-10 text-2xl w-full max-w-md md:max-w-lg">
 
-            <p class="font-heading mx-auto text-center font-bold w-[250px]" x-text="services[currentIndex]"></p>
+            <!-- lijevi -->
+            <div class="flex justify-start">
+                <button @click="prev"
+                    class="text-4xl md:text-5xl cursor-pointer hover:text-primary">
+                    &larr;
+                </button>
+            </div>
 
-            <button @click="next" class=" right-8 md:right-160 text-5xl cursor-pointer hover:text-primary">&rarr;</button>
+            <!-- tekst -->
+            <div class="text-center max-w-md">
+                <p class="font-heading font-bold"
+                    x-text="services[currentIndex]"></p>
+            </div>
+
+            <!-- desni -->
+            <div class="flex justify-end">
+                <button @click="next"
+                    class="text-4xl md:text-5xl cursor-pointer hover:text-primary">
+                    &rarr;
+                </button>
+            </div>
+
         </div>
         <div class="mt-5 w-48 h-1 bg-secondary rounded-full overflow-hidden">
             <div class="h-full bg-primary transition-all duration-300"
@@ -60,8 +78,8 @@
     function slider() {
         return {
             services: [
-                'Web design',
-                'Web development',
+                'Izrada web stranica',
+                'Izrada web aplikacija',
                 'Digitalni marketing',
                 'Google & Meta ads',
                 'PR & Eventi',

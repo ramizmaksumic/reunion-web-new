@@ -1,6 +1,14 @@
 @extends('layouts.site')
 
+@section('title', 'Google i Meta oglašavanje BiH | Kampanje koje donose prodaju')
+@section('meta_description', 'Kreiramo i vodimo Google i Meta kampanje koje donose stvarne klijente i prodaju. Digitalno oglašavanje za ozbiljne biznise.')
+@section('meta_keywords', 'google ads, meta ads, digital advertising')
+
+@section('og_title', 'Google i Meta oglašavanje BiH | Kampanje koje donose prodaju')
+@section('og_description', 'Kreiramo i vodimo Google i Meta kampanje koje donose stvarne klijente i prodaju. Digitalno oglašavanje za ozbiljne biznise.')
+@section('og_image', asset('images/og-mostar.jpg'))
 @section('content')
+
 
 <x-page-hero-section title="Google & Meta ads" description="Planiramo, postavljamo i vodimo Google i Meta (Facebook & Instagram) oglase koji su dio šire marketing strategije i fokusirani na upite, prodaju i mjerljive rezultate." />
 
@@ -13,7 +21,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="col-span-2">
-                <h2 class="font-heading text-4xl">Stvaramo jedan po jedan.</h2>
+                <h2 class="font-heading text-2xl md:text-4xl">Stvaramo jedan po jedan.</h2>
             </div>
             <div id="projects-number" class="col-span-1 flex gap-x-5 items-center">
                 <div>
@@ -103,6 +111,21 @@
                         Reunion tim i naši stalni saradnici imaju dugogodišnje iskustvo u vođenju digitalnih kampanja, a do sada su realizovali 200+ kampanja za klijente iz različitih industrija.
 
                     </p>
+                </div>
+                <div class="mt-10">
+                    <h2 class="font-body  text-2xl mb-4 text-center md:text-start">Da li trebate neku od naših ostalih usluga</h2>
+
+                    <div class="flex flex-wrap gap-x-5 gap-y-3 justify-center md:justify-start mt-5 px-5 md:px-0">
+                        <p><a href="/izrada-web-aplikacija" class="font-body hover:text-primary uppercase">Izrada web aplikacija</a></p>
+                        <p><a href="/izrada-web-stranica" class="font-body hover:text-primary uppercase">Izrada web stranica</a></p>
+                        <p><a href="/digitalni-marketing" class="font-body hover:text-primary uppercase">Digitalni marketing</a></p>
+
+                        <p><a href="/foto-video" class="font-body hover:text-primary uppercase">Foto & video</a></p>
+                        <p><a href="/pr-komunikacija" class="font-body hover:text-primary uppercase">PR & Eventi</a></p>
+                        <p><a href="/branding" class="font-body hover:text-primary uppercase">Branding & dizajn</a></p>
+                        <p><a href="/team-building" class="font-body hover:text-primary uppercase">Team Building</a></p>
+
+                    </div>
                 </div>
 
             </div>

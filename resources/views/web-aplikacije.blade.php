@@ -12,7 +12,6 @@
 
 <x-page-hero-section title="Izrada web aplikacija" description="Razvijamo web aplikacije koje su tehnički pouzdane, brze i spremne za dugoročni marketing, nadogradnje i rast biznisa" />
 
-
 <!-- Osnovna sekcija -->
 <section class="bg-secondary py-20">
 
@@ -54,6 +53,61 @@
     </div>
 </section>
 
+
+<section class="py-24">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <h2 class="font-heading text-3xl md:text-5xl mb-10">
+            Custom web aplikacije za digitalizaciju poslovanja
+        </h2>
+
+        <p class="font-body text-lg leading-relaxed">
+            Izrada web aplikacija podrazumijeva razvoj prilagođenih digitalnih sistema i platformi
+            koji automatiziraju procese, upravljaju podacima i omogućavaju skalabilan rast poslovanja.
+            Za razliku od klasičnih web stranica, web aplikacije uključuju kompleksnu logiku,
+            korisničke naloge, administracijske panele, baze podataka i integracije s drugim sistemima.
+        </p>
+
+    </div>
+</section>
+
+
+<section class="bg-secondary py-24">
+    <div class="max-w-screen-2xl mx-auto px-6">
+
+        <h2 class="font-heading text-3xl text-center mb-16">
+            Sistemi koje razvijamo
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <div class="bg-white rounded-2xl p-8">
+                <h3 class="font-heading text-xl mb-4">Booking sistemi</h3>
+                <p class="font-body text-sm">
+                    Online rezervacije, kalendari, naplate i upravljanje smještajem.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8">
+                <h3 class="font-heading text-xl mb-4">Admin platforme</h3>
+                <p class="font-body text-sm">
+                    Upravljanje korisnicima, podacima i internim procesima.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8">
+                <h3 class="font-heading text-xl mb-4">Custom CRM sistemi</h3>
+                <p class="font-body text-sm">
+                    Digitalni alati prilagođeni specifičnim poslovnim potrebama.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
 <!-- Sekcija sa detaljima web web -->
 <section>
     <!-- Glavni div -->
@@ -89,14 +143,8 @@
             <div class="flex flex-col justify-start md:w-1/2">
 
                 <div>
-                    <h2 class="font-heading text-3xl font-bold mb-4 text-center px-5 md:px-0 md:text-start">Izrada web aplikacija | web development</h2>
-                    <p class="font-body text-lg leading-relaxed text-center px-5 md:text-start md:px-0">
-                        Izrada web aplikacija podrazumijeva razvoj prilagođenih digitalnih sistema i platformi koje automatiziraju procese, upravljaju podacima i
-                        omogućavaju rast poslovanja. Za razliku od klasičnih web stranica, web aplikacije uključuju kompleksnu logiku, korisničke naloge,
-                        administracijske panele i integracije s drugim sistemima.
 
-                    </p>
-                    <div class="mt-10">
+                    <div class="">
                         <h2 class="font-heading text-2xl mb-4 text-center md:text-start">Kojoj firmi je potrebna web aplikacija?</h2>
                         <p class="font-body mt-3 px-5 md:px-0 text-center md:text-start">Web aplikacija je idealno rješenje za:</p>
                         <ul class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
@@ -114,33 +162,6 @@
 
                     </div>
                     <div class="mt-10">
-                        <h2 class="font-heading text-2xl mb-4 text-center md:text-start">Koliko košta izrada web aplikacije?</h2>
-                        <p class="font-body mt-3 px-5 md:px-0 text-center md:text-start">Cijena zavisi od kompleksnosti sistema.</p>
-                        <ul class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
-                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Jednostavne aplikacije: od 3.000 KM</li>
-                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Srednje kompleksni sistemi: 5.000 – 10.000 KM</li>
-                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Kompleksne platforme i digitalni sistemi: 10.000 KM +</li>
-
-                        </ul>
-
-                    </div>
-                    <div class="mt-10">
-                        <h2 class="font-heading text-2xl mb-4 text-center md:text-start">Šta je uključeno u fazu izrade web aplikacije?</h2>
-                        <ul class="mt-5 font-body px-5 md:px-0 text-center md:text-start">
-                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Front-end i back-end razvoj web aplikacije</li>
-                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Responsivna prilagodba za sve uređaje</li>
-                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Optimizacija brzine i performansi</li>
-                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Sigurnosne postavke i osnovna zaštita </li>
-                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>SEO-tehnička osnova </li>
-                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Integracija kontakt formi i funkcionalnosti </li>
-                            <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Priprema za daljnji marketing i sadržaj </li>
-                        </ul>
-                        <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
-                            Tokom razvoja redovno testiramo funkcionalnost, stabilnost i korisničko iskustvo kako bi web bio spreman za realnu upotrebu od prvog dana.
-
-                        </p>
-                    </div>
-                    <div class="mt-10">
                         <h2 class="font-heading text-2xl mb-4 text-center md:text-start">Koliko traje izrada web aplikacija?</h2>
 
                         <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
@@ -151,35 +172,72 @@
 
                         </p>
                     </div>
-                    <div class="mt-10">
-                        <h2 class="font-heading text-2xl mb-4 text-center md:text-start">Nakon lansiranja</h2>
 
-                        <p class="font-body text-lg leading-relaxed text-center px-5 mt-5 md:text-start md:px-0">
-                            Po završetku razvoja, web prolazi završnu provjeru i pripremu za lansiranje.
-                            Po potrebi, nudimo podršku, održavanje i daljnje unapređenje u sklopu kontinuiranog marketing rješenja.
-
-
-                        </p>
-                    </div>
-
-                    <div class="mt-10">
-                        <h2 class="font-body  text-2xl mb-4 text-center md:text-start">Da li trebate neku od naših ostalih usluga</h2>
-
-                        <div class="flex flex-wrap gap-x-5 gap-y-3 justify-center md:justify-start mt-5 px-5 md:px-0">
-                            <p><a href="/izrada-web-stranica" class="font-body hover:text-primary uppercase">Izrada web stranica</a></p>
-                            <p><a href="/digitalni-marketing" class="font-body hover:text-primary uppercase">Digitalni marketing</a></p>
-                            <p><a href="/google-ads" class="font-body hover:text-primary uppercase">Google & Meta ads</a></p>
-                            <p><a href="/foto-video" class="font-body hover:text-primary uppercase">Foto & video</a></p>
-                            <p><a href="/branding" class="font-body hover:text-primary uppercase">Branding & dizajn</a></p>
-                            <p><a href="/pr-komunikacija" class="font-body hover:text-primary uppercase">PR & Eventi</a></p>
-                            <p><a href="/team-building" class="font-body hover:text-primary uppercase">Team building</a></p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+</section>
+
+<!-- Cijena -->
+
+<section class="bg-secondary py-24">
+    <div class="max-w-4xl mx-auto text-center px-6">
+
+        <h2 class="font-heading text-3xl mb-12">
+            Koliko košta izrada web aplikacije?
+        </h2>
+
+        <div class="space-y-6 font-body text-lg">
+            <p>Jednostavne aplikacije: od 3.000 KM</p>
+            <p>Srednje kompleksni sistemi: 5.000 – 15.000 KM</p>
+            <p>Kompleksne platforme: 20.000 KM+</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="py-24">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <h2 class="font-heading text-3xl mb-12">
+            Kako izgleda proces razvoja?
+        </h2>
+
+        <div class="space-y-8 font-body">
+            <p>1. Analiza i planiranje sistema</p>
+            <p>2. Dizajn korisničkog iskustva</p>
+            <p>3. Razvoj i testiranje</p>
+            <p>4. Lansiranje i podrška</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="py-24">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+        <h2 class="font-heading text-3xl mb-8">
+            Zašto investirati u custom web aplikaciju?
+        </h2>
+
+        <p class="font-body leading-relaxed">
+            Custom web aplikacija omogućava potpunu kontrolu nad poslovnim procesima,
+            veću sigurnost podataka i skalabilnost bez ograničenja gotovih rješenja.
+        </p>
+
+    </div>
+    <div class="max-w-4xl mx-auto px-6 text-center mt-10">
+        <h2 class="font-heading text-3xl mb-8">Nakon lansiranja</h2>
+
+        <p class="font-body leading-relaxed">
+            Po završetku razvoja, web prolazi završnu provjeru i pripremu za lansiranje.
+            Po potrebi, nudimo podršku, održavanje i daljnje unapređenje u sklopu kontinuiranog marketing rješenja.
+
+
+        </p>
+    </div>
 </section>
 
 <section class="bg-secondary py-20 mt-10">

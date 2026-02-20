@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 
 
 
@@ -14,6 +14,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+
 
     <!-- Styles / Scripts -->
 
@@ -34,6 +35,8 @@
 <body class="">
     <div class="">
         {{$slot}}
+
+
 
     </div>
     <script>
@@ -61,7 +64,32 @@
         });
     </script>
 
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
 
+    <script>
+        let quill;
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const editor = document.getElementById('editor');
+            if (!editor) return;
+
+            quill = new Quill('#editor', {
+                theme: 'snow'
+            });
+
+        });
+
+        function savePost() {
+
+            const html = quill.root.innerHTML;
+
+            Livewire.first().set('body', html);
+            Livewire.first().call('save');
+
+        }
+    </script>
 
 
     @livewireScripts

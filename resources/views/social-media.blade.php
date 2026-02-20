@@ -1,8 +1,16 @@
 @extends('layouts.site')
 
+@section('title', 'Digitalni marketing BiH | Strategija, SEO i kampanje koje donose klijente')
+@section('meta_description', 'Upravljamo digitalnim marketingom, društvenim mrežama i kampanjama koje su dio jedinstvene strategije rasta.')
+@section('meta_keywords', 'digitalni marketing')
+
+@section('og_title', 'Digitalni marketing BiH | Strategija, SEO i kampanje koje donose klijente')
+@section('og_description', 'Upravljamo digitalnim marketingom, društvenim mrežama i kampanjama koje su dio jedinstvene strategije rasta.')
+@section('og_image', asset('images/og-mostar.jpg'))
+
 @section('content')
 
-<x-page-hero-section title="Social media marketing" description="Upravljamo digitalnim marketingom, društvenim mrežama i kampanjama koje su dio jedinstvene strategije rasta. " />
+<x-page-hero-section title="Digitalni marketing" description="Upravljamo digitalnim marketingom, društvenim mrežama i kampanjama koje su dio jedinstvene strategije rasta. " />
 
 
 <!-- Osnovna sekcija -->
@@ -93,6 +101,21 @@
                     <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Redovno objavljivanje prema planu,</li>
                     <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Reporting i analiza </li>
                 </ul>
+                <div class="mt-10">
+                    <h2 class="font-body  text-2xl mb-4 text-center md:text-start">Da li trebate neku od naših ostalih usluga</h2>
+
+                    <div class="flex flex-wrap gap-x-5 gap-y-3 justify-center md:justify-start mt-5 px-5 md:px-0">
+                        <p><a href="/izrada-web-aplikacija" class="font-body hover:text-primary uppercase">Izrada web aplikacija</a></p>
+                        <p><a href="/izrada-web-stranica" class="font-body hover:text-primary uppercase">Izrada web stranica</a></p>
+
+                        <p><a href="/google-ads" class="font-body hover:text-primary uppercase">Google & Meta ads</a></p>
+                        <p><a href="/foto-video" class="font-body hover:text-primary uppercase">Foto & video</a></p>
+                        <p><a href="/pr-komunikacija" class="font-body hover:text-primary uppercase">PR & Eventi</a></p>
+                        <p><a href="/branding" class="font-body hover:text-primary uppercase">Branding & dizajn</a></p>
+                        <p><a href="/team-building" class="font-body hover:text-primary uppercase">Team Building</a></p>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>

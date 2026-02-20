@@ -7,6 +7,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\PriceController;
 use App\Http\Controllers\SinglePageController;
 use App\Livewire\Admin\Layout;
+use App\Livewire\Admin\Posts\Create;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
 
@@ -22,9 +23,9 @@ Route::view('/usluge', 'services')->name('services');
 // Route::get('/web-design', [SinglePageController::class, 'index'])->name('web.design');
 // Route::get('/web-development', [SinglePageController::class, 'index'])->name('web.dev');
 
-Route::view('web-design', 'web-design')->name('web-design');
-Route::view('web-development', 'web-dev')->name('web-dev');
-Route::view('social-media', 'social-media')->name('social-media');
+Route::view('izrada-web-stranica', 'web-design')->name('web-design');
+Route::view('izrada-web-aplikacija', 'web-dev')->name('web-dev');
+Route::view('digitalni-marketing', 'social-media')->name('social-media');
 Route::view('google-ads', 'google-ads')->name('google-ads');
 Route::view('pr-komunikacija', 'pr')->name('pr-komunikacija');
 Route::view('foto-video', 'foto-video')->name('foto-video');
@@ -54,8 +55,18 @@ Route::get('/projects/{project}/documentation', [\App\Http\Controllers\ProjectDo
     ->name('projects.documentation');
 
 
-Route::get('/admin', Layout::class)
-    ->middleware(['auth', 'admin'])
-    ->name('admin');
+Route::middleware(['auth', 'admin'])
+    ->prefix('admin')
+    ->group(function () {
+
+        Route::get('/', \App\Livewire\Admin\Layout::class)
+            ->name('admin');
+
+        Route::get('/posts/create', Create::class)
+            ->name('admin.posts.create');
+
+        // Route::get('/posts/edit/{post}', Edit::class)
+        //     ->name('admin.posts.edit');
+    });
 
 require __DIR__ . '/auth.php';

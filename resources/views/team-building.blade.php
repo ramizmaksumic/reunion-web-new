@@ -1,5 +1,13 @@
 @extends('layouts.site')
 
+@section('title', 'All inclusive team building za IT TECH kompanije i poslovne korisnike')
+@section('meta_description', 'All Inclusive Team Building je kompletno organizovan team building u prirodi ili nekog drugoj lokaciji po Vašem izboru, za manje i srednje kompanije (10 - 50 osoba).')
+@section('meta_keywords', 'team building')
+
+@section('og_title', 'All inclusive team building za IT TECH kompanije i poslovne korisnike')
+@section('og_description', 'All Inclusive Team Building je kompletno organizovan team building u prirodi ili nekog drugoj lokaciji po Vašem izboru, za manje i srednje kompanije (10 - 50 osoba).')
+@section('og_image', asset('images/og-mostar.jpg'))
+
 @section('content')
 
 <x-page-hero-section title="Team building" description="Retreat u prirodi za kompanije, zaposlenike i manje grupe." />
@@ -13,7 +21,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="col-span-2">
-                <h2 class="font-heading text-md md:text-4xl">Ne hvalimo se veličinom, ali...</h2>
+                <h2 class="font-heading text-md text-2xl md:text-4xl">Stvaramo jedan po jedan</h2>
             </div>
             <div id="projects-number" class="col-span-1 flex gap-x-5 items-center">
                 <div>
@@ -170,6 +178,20 @@
                     <li class="mt-3"><i class="fa-solid fa-check mr-2"></i>Fokus na detalje, atmosferu i vrhunski kvalitet hrane i pića </li>
                     <li class="mt-3"><i class="fa-solid fa-check mr-2"></i> Fleksibilnost i personalizacija za svaku kompaniju ili pojedinca </li>
                 </ul>
+                <div class="mt-10">
+                    <h2 class="font-body  text-2xl mb-4 text-center md:text-start">Da li trebate neku od naših ostalih usluga</h2>
+
+                    <div class="flex flex-wrap gap-x-5 gap-y-3 justify-center md:justify-start mt-5 px-5 md:px-0">
+                        <p><a href="/izrada-web-aplikacija" class="font-body hover:text-primary uppercase">Izrada web aplikacija</a></p>
+                        <p><a href="/izrada-web-stranica" class="font-body hover:text-primary uppercase">Izrada web stranica</a></p>
+                        <p><a href="/digitalni-marketing" class="font-body hover:text-primary uppercase">Digitalni marketing</a></p>
+                        <p><a href="/google-ads" class="font-body hover:text-primary uppercase">Google & Meta ads</a></p>
+                        <p><a href="/foto-video" class="font-body hover:text-primary uppercase">Foto & video</a></p>
+                        <p><a href="/pr-komunikacija" class="font-body hover:text-primary uppercase">PR & Eventi</a></p>
+                        <p><a href="/branding" class="font-body hover:text-primary uppercase">Branding & dizajn</a></p>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>

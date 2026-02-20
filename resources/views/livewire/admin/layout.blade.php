@@ -56,12 +56,19 @@
         <livewire:admin.projects.index />
         @elseif($activeSection === 'posts')
         <livewire:admin.posts.index />
+        @elseif($activeSection === 'posts-create')
+        <livewire:admin.posts.create />
+
+        @elseif($activeSection === 'posts-edit')
+        <livewire:admin.posts.edit :postId="$editingPostId" />
         @elseif($activeSection === 'tags')
         <livewire:admin.tags.index />
         @elseif($activeSection === 'documentation')
         <livewire:admin.documentation.index />
         @endif
 
+
     </main>
+
 
 </div>

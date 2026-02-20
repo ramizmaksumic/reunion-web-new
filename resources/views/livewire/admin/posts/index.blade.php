@@ -4,11 +4,10 @@
     <div class="flex justify-between items-center">
         <h2 class="text-2xl font-bold text-gray-800">Postovi</h2>
 
-        <button
-            wire:click="create"
-            class="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-black">
+        <a href="{{ route('admin.posts.create') }}"
+            class="bg-black text-white px-4 py-2 rounded">
             + Novi post
-        </button>
+        </a>
     </div>
 
     {{-- TABLE --}}
@@ -33,11 +32,7 @@
                         {{ $item->slug }}
                     </td>
                     <td class="p-3 text-right space-x-2">
-                        <button
-                            wire:click="edit({{ $item->id }})"
-                            class="text-blue-600 hover:underline">
-                            Edit
-                        </button>
+
 
                         <button
                             wire:click="confirmDelete({{ $item->id }})"
@@ -78,7 +73,8 @@
                         wire:model.defer="body"
                         rows="5"
                         placeholder="Sadržaj posta"
-                        class="w-full border rounded p-2"></textarea>
+                        class="w-full border rounded p-2" id="editor"></textarea>
+
                     <!-- KATEGORIJE -->
                     <select wire:model.defer="category_id" class="w-full border rounded p-2">
                         <option value="">Bez kategorije</option>
@@ -99,14 +95,7 @@
                     <p class="text-xs text-gray-500">
                         Držite CTRL / CMD za odabir više tagova
                     </p>
-
-
-
-
-
                     <input wire:model="image" type="file">
-
-
                     <input wire:model="banner" type="file">
                 </div>
 

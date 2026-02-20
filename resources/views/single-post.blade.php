@@ -38,10 +38,8 @@
                     <a href=""><i class="fa-brands fa-viber text-gray-400 text-2xl"></i></a>
                 </div>
             </div>
-            <div class="flex flex-wrap gap-3 mt-5 px-5 md:px-0">
-                <p>{{$post->body}}</p>
-
-
+            <div class="prose max-w-none px-3 md:px-0 mt-10">
+                {!! $post->body !!}
             </div>
 
             <!-- Tagovi -->
@@ -70,21 +68,31 @@
             </div>
 
             <!-- Povezane vijesti kartice -->
-            <div class="py-10 px-5 mt-5">
-                <h4 class="font-body text-2xl font-medium">Možda vas zanima</h4>
-                <div class="flex flex-row gap-x-3 mt-5">
-                    @foreach ($allPosts as $singlePost )
+            <div class="space-y-6 mt-8">
 
-                    <div class="card">
-                        <img src="{{ URL::asset('images/post.jpg') }}" alt="" class="w-[130px]">
-                        <small class="font-body uppercase text-primary font-medium">{{ $singlePost->title }}</small>
-                        <h4 class="font-body text-medium">{{$singlePost->post}}</h4>
+                @foreach ($allPosts as $singlePost)
 
+                <a href="{{ route('single-post', $singlePost) }}"
+                    class="flex gap-4 items-start group">
+
+                    <img
+                        src="{{ asset('storage/'.$singlePost->image) }}"
+                        class="w-32 h-20 object-cover rounded-lg">
+
+                    <div>
+                        <h3 class="font-semibold text-gray-800 group-hover:text-primary transition">
+                            {{ $singlePost->title }}
+                        </h3>
+
+                        <p class="text-sm text-gray-500 mt-1">
+                            {{ \Illuminate\Support\Str::words(strip_tags($singlePost->body), 12) }}
+                        </p>
                     </div>
-                    @endforeach
 
+                </a>
 
-                </div>
+                @endforeach
+
             </div>
 
 
