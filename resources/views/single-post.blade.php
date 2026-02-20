@@ -1,5 +1,9 @@
 @extends('layouts.site')
 
+@section('og_title', $post->title)
+@section('og_description', \Illuminate\Support\Str::words(strip_tags($post->body), 25))
+@section('og_image', $post->image ? asset('storage/'.$post->image) : asset('images/logo.png'))
+
 @section('content')
 
 <x-page-hero-section title="{{$post->title}}" description="Reunion novosti & zanimljivosti" />
