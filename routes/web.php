@@ -33,6 +33,9 @@ Route::view('branding', 'branding')->name('branding');
 Route::view('team-building', 'team-building')->name('team-building');
 Route::view('b4b', 'b4b')->name('b4b');
 
+// Rute za zaposlenike
+Route::view('/team/ramiz-maksumic', 'team.ramiz-maksumic')->name('ramiz-maksumic');
+
 
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
 Route::get('/portfolio/single/{project:slug}/', [PortfolioController::class, 'portfolioSingle'])->name('single-portfolio');

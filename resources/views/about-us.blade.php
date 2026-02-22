@@ -128,20 +128,28 @@
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8 justify-items-center items-center">
-            <x-team-member
-                name="Ramiz Maksumic"
-                position="Web Development & Desgin Lead"
-                image="{{ asset('images/team/Ramiz.jpg') }}" />
+            <a href="/team/ramiz-maksumic">
 
-            <x-team-member
-                name="Irma Kajan"
-                position="PR, Event & Digital Marketing Lead"
-                image="{{ asset('images/team/Irma.jpg') }}" />
+                <x-team-member
+                    name="Ramiz Maksumic"
+                    position="Web Development & Desgin Lead"
+                    image="{{ asset('images/team/Ramiz.jpg') }}" />
 
-            <x-team-member
-                name="Maher Al Osta"
-                position="Business & Digital Marketing Consultant (Vanjski saradnik)"
-                image="{{ asset('images/team/Maher.jpg') }}" />
+            </a>
+            <a href="#">
+                <x-team-member
+                    name="Irma Kajan"
+                    position="PR, Event & Digital Marketing Lead"
+                    image="{{ asset('images/team/Irma.jpg') }}" />
+
+            </a>
+            <a href="#">
+                <x-team-member
+                    name="Maher Al Osta"
+                    position="Business & Digital Marketing Consultant (Vanjski saradnik)"
+                    image="{{ asset('images/team/Maher.jpg') }}" />
+
+            </a>
         </div>
     </div>
 
