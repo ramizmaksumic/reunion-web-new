@@ -98,7 +98,7 @@
                     </li>
 
                     <li class="hover:text-primary transition">
-                        <a href="/google-meta-ads">Google & Meta ads</a>
+                        <a href="/google-ads">Google & Meta ads</a>
                     </li>
 
                     <li class="hover:text-primary transition">
@@ -106,7 +106,7 @@
                     </li>
 
                     <li class="hover:text-primary transition">
-                        <a href="/brending">Brending & Dizajn</a>
+                        <a href="/branding">Brending & Dizajn</a>
                     </li>
 
                 </ul>
