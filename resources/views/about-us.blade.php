@@ -128,28 +128,39 @@
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8 justify-items-center items-center">
-            <a href="/team/ramiz-maksumic">
+            <div>
+                <a href="/team/ramiz-maksumic">
 
-                <x-team-member
-                    name="Ramiz Maksumic"
-                    position="Web Development & Desgin Lead"
-                    image="{{ asset('images/team/Ramiz.jpg') }}" />
+                    <x-team-member
+                        name="Ramiz Maksumić"
+                        position="Web Development & Desgin Lead"
+                        image="{{ asset('images/team/Ramiz.jpg') }}" />
 
-            </a>
-            <a href="#">
-                <x-team-member
-                    name="Irma Kajan"
-                    position="PR, Event & Digital Marketing Lead"
-                    image="{{ asset('images/team/Irma.jpg') }}" />
+                </a>
+                <a href="/team/ramiz-maksumic" class="text-sm hover:text-primary">vidi više detalja &rarr;</a>
+            </div>
+            <div>
 
-            </a>
-            <a href="#">
-                <x-team-member
-                    name="Maher Al Osta"
-                    position="Business & Digital Marketing Consultant (Vanjski saradnik)"
-                    image="{{ asset('images/team/Maher.jpg') }}" />
+                <a href="{{ route('irma-kajan') }}">
+                    <x-team-member
+                        name="Irma Kajan"
+                        position="PR, Event & Digital Marketing Lead"
+                        image="{{ asset('images/team/Irma.jpg') }}" />
 
-            </a>
+                </a>
+                <a href="/team/irma-kajan" class="text-sm hover:text-primary">vidi više detalja &rarr;</a>
+            </div>
+            <div>
+
+                <a href="{{ route('maher-al-osta') }}">
+                    <x-team-member
+                        name="Maher Al Osta"
+                        position="Business & Digital Marketing Consultant (Vanjski saradnik)"
+                        image="{{ asset('images/team/Maher.jpg') }}" />
+
+                </a>
+                <a href="/team/maher-al-osta" class="text-sm hover:text-primary">vidi više detalja &rarr;</a>
+            </div>
         </div>
     </div>
 

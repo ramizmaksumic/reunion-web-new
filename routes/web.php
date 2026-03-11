@@ -35,6 +35,8 @@ Route::view('b4b', 'b4b')->name('b4b');
 
 // Rute za zaposlenike
 Route::view('/team/ramiz-maksumic', 'team.ramiz-maksumic')->name('ramiz-maksumic');
+Route::view('/team/maher-al-osta', 'team.maher-al-osta')->name('maher-al-osta');
+Route::view('/team/irma-kajan', 'team.irma-kajan')->name('irma-kajan');
 
 
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
