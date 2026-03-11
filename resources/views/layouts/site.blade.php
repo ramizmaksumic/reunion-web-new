@@ -26,6 +26,11 @@
 
     <link href="/assets/fonts/fontawesome/css/all.min.css" rel="stylesheet">
 
+    <!-- Google reCAPTCHA   -->
+    <script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}"></script>
+    <!-- Your code -->
+
+
 
     <title>@yield('title', 'Reunion web & marketing agencija Mostar')</title>
 
@@ -43,6 +48,31 @@
 
         @include('partials.footer')
     </div>
+
+    <script>
+        grecaptcha.ready(function() {
+
+            const form = document.querySelector("form");
+
+            form.addEventListener("submit", function(e) {
+
+                e.preventDefault();
+
+                grecaptcha.execute('{{ env('
+                    RECAPTCHA_SITE_KEY ') }}', {
+                        action: 'submit'
+                    }).then(function(token) {
+
+                    document.getElementById('recaptchaToken').value = token;
+
+                    form.submit();
+
+                });
+
+            });
+
+        });
+    </script>
 </body>
 
 </html>

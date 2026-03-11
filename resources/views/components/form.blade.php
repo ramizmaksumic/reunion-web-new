@@ -23,6 +23,7 @@
 @endif
 <form action="{{ route('send.order') }}" method="POST" enctype="multipart/form-data">
     @csrf
+    <input type="hidden" name="g-recaptcha-response" id="recaptchaToken">
     <div class="flex flex-col md:flex-row gap-5">
         <div class="flex flex-col text-xl font-body w-full md:w-1/2">
             <label for="name" class="font-medium">Ime i prezime</label>

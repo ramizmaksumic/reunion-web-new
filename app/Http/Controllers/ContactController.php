@@ -7,6 +7,7 @@ use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Http;
 
 class ContactController extends Controller
 {
@@ -92,8 +93,23 @@ class ContactController extends Controller
 
         $order = Order::create($data);
 
+        $response = Http::asForm()->post(
+            'https://www.google.com/recaptcha/api/siteverify',
+            [
+                'secret' => env('RECAPTCHA_SECRET_KEY'),
+                'response' => $request->input('g-recaptcha-response'),
+                'remoteip' => $request->ip(),
+            ]
+        );
+
+        $result = $response->json();
+
+        if (!($result['success'] ?? false) || ($result['score'] ?? 0) < 0.5) {
+            return back()->with('error', 'Recaptcha verifikacija nije uspjela.');
+        }
+
         try {
-            Mail::to(env('ADMIN_EMAIL'))->queue(new SendMail($order->id));
+            Mail::to(env('ADMIN_EMAIL'))->send(new SendMail($order->id));
         } catch (\Throwable $e) {
             \Illuminate\Support\Facades\Log::error($e->getMessage());
         }
