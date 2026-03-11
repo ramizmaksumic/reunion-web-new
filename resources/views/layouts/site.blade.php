@@ -49,23 +49,32 @@
         @include('partials.footer')
     </div>
 
+
+
     <script>
-        grecaptcha.ready(function() {
+        document.addEventListener("DOMContentLoaded", function() {
 
             const form = document.querySelector("form");
+
+            if (!form) return;
 
             form.addEventListener("submit", function(e) {
 
                 e.preventDefault();
 
-                grecaptcha.execute('{{ env('
-                    RECAPTCHA_SITE_KEY ') }}', {
-                        action: 'submit'
-                    }).then(function(token) {
+                grecaptcha.ready(function() {
 
-                    document.getElementById('recaptchaToken').value = token;
+                    grecaptcha.execute('{{ env('
+                            RECAPTCHA_SITE_KEY ') }}', {
+                                action: 'submit'
+                            })
+                        .then(function(token) {
 
-                    form.submit();
+                            document.getElementById('recaptchaToken').value = token;
+
+                            form.submit();
+
+                        });
 
                 });
 
@@ -73,6 +82,8 @@
 
         });
     </script>
+
+
 </body>
 
 </html>
