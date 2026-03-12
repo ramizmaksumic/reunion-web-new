@@ -27,7 +27,7 @@
     <link href="/assets/fonts/fontawesome/css/all.min.css" rel="stylesheet">
 
     <!-- Google reCAPTCHA   -->
-    <script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <!-- Your code -->
 
 
@@ -50,38 +50,6 @@
     </div>
 
 
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-
-            const form = document.querySelector("form");
-
-            if (!form) return;
-
-            form.addEventListener("submit", function(e) {
-
-                e.preventDefault();
-
-                grecaptcha.ready(function() {
-
-                    grecaptcha.execute('{{ env('
-                            RECAPTCHA_SITE_KEY ') }}', {
-                                action: 'submit'
-                            })
-                        .then(function(token) {
-
-                            document.getElementById('recaptchaToken').value = token;
-
-                            form.submit();
-
-                        });
-
-                });
-
-            });
-
-        });
-    </script>
 
 
 </body>

@@ -21,9 +21,9 @@
     </ul>
 </div>
 @endif
-<form action="{{ route('send.order') }}" method="POST" enctype="multipart/form-data">
+<form id="form" action="{{ route('send.order') }}" method="POST" enctype="multipart/form-data" id="form">
     @csrf
-    <input type="hidden" name="g-recaptcha-response" id="recaptchaToken">
+
     <div class="flex flex-col md:flex-row gap-5">
         <div class="flex flex-col text-xl font-body w-full md:w-1/2">
             <label for="name" class="font-medium">Ime i prezime</label>
@@ -87,6 +87,18 @@
     </div>
     <div class=" flex flex-col text-xl font-body w-full md:w-1/2">
 
-        <button type="submit" class="bg-primary py-3 mt-10 px-10 rounded-2xl font-heading text-default cursor-pointer">Pošalji &rarr;</button>
+        <button
+            data-sitekey="{{env('RECAPTCHA_SITE_KEY')}}"
+            data-callback='onSubmit'
+            data-action='submit'
+            type="submit" class="g-recaptcha bg-primary py-3 mt-10 px-10 rounded-2xl font-heading text-default cursor-pointer">Pošalji &rarr;</button>
     </div>
 </form>
+
+
+
+<script>
+    function onSubmit(token) {
+        document.getElementById("form").submit();
+    }
+</script>

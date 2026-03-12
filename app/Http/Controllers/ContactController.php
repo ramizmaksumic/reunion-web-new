@@ -69,6 +69,7 @@ class ContactController extends Controller
 
     public function send(Request $request)
     {
+
         $request->validate([
             'name'    => 'required|string|max:255',
             'phone'   => 'required|string|max:20',
@@ -78,6 +79,7 @@ class ContactController extends Controller
             'date'    => 'required|date',
             'description' => 'nullable|string|max:4000',
             'fileInput' => 'nullable|file|mimes:pdf,doc,docx,jpg,png|max:4048',
+            'g-recaptcha-response' => ['required', new \App\Rules\ReCaptcha()],
         ]);
 
         $data = $request->only(['name', 'phone', 'adress', 'email', 'service', 'date', 'description']);
@@ -93,20 +95,6 @@ class ContactController extends Controller
 
         $order = Order::create($data);
 
-        $response = Http::asForm()->post(
-            'https://www.google.com/recaptcha/api/siteverify',
-            [
-                'secret' => env('RECAPTCHA_SECRET_KEY'),
-                'response' => $request->input('g-recaptcha-response'),
-                'remoteip' => $request->ip(),
-            ]
-        );
-
-        $result = $response->json();
-
-        if (!($result['success'] ?? false) || ($result['score'] ?? 0) < 0.5) {
-            return back()->with('error', 'Recaptcha verifikacija nije uspjela.');
-        }
 
         try {
             Mail::to(env('ADMIN_EMAIL'))->send(new SendMail($order->id));
