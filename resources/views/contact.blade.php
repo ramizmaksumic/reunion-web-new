@@ -1,5 +1,12 @@
 @extends('layouts.site')
 
+@section('title', 'Kontakt | Reunion web & marketing agencija Mostar')
+@section('meta_description', 'Kontaktirajte Reunion agenciju za izradu web stranica, digitalni marketing ili oglašavanje. Javite nam se telefonom, emailom ili putem forme.')
+@section('meta_keywords', 'kontakt, reunion agencija mostar')
+
+@section('og_title', 'Kontakt | Reunion agencija')
+@section('og_description', 'Kontaktirajte nas za više informacija o našim uslugama.')
+
 @section('content')
 
 <x-page-hero-section title="Kontakt" description="kontaktirajte nas za više informacija" />

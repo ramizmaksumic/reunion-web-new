@@ -1,5 +1,13 @@
 @extends('layouts.site')
 
+@section('title', $project->name . ' | Portfolio Reunion agencije')
+@section('meta_description', $project->description ? \Illuminate\Support\Str::limit(strip_tags($project->description), 155) : 'Pogledajte detalje projekta ' . $project->name . ', realiziranog od strane Reunion agencije.')
+@section('meta_keywords', $project->name . ', portfolio, reunion agencija')
+
+@section('og_title', $project->name . ' | Reunion agencija')
+@section('og_description', $project->description ? \Illuminate\Support\Str::limit(strip_tags($project->description), 200) : 'Pogledajte detalje ovog projekta.')
+@section('og_image', $project->image ? asset('storage/' . $project->image) : asset('images/og-mostar.jpg'))
+
 @section('content')
 
 <x-page-hero-section :title="$project->name" description="ponosno predstavljamo" />

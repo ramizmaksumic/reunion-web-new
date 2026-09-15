@@ -1,5 +1,12 @@
 @extends('layouts.site')
 
+@section('title', 'Reunion web & marketing agencija Mostar | Web dizajn, aplikacije i digitalni marketing')
+@section('meta_description', 'Reunion je web i marketing agencija iz Mostara. Izrada web stranica i aplikacija, digitalni marketing, Google & Meta oglašavanje, branding i PR.')
+@section('meta_keywords', 'marketing agencija mostar, izrada web stranica, digitalni marketing bih')
+
+@section('og_title', 'Reunion web & marketing agencija Mostar')
+@section('og_description', 'Web dizajn, izrada web aplikacija i digitalni marketing koji donose rezultate.')
+
 @section('content')
 
 <div>

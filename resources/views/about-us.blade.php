@@ -1,5 +1,12 @@
 @extends('layouts.site')
 
+@section('title', 'O nama | Reunion web & marketing agencija Mostar')
+@section('meta_description', 'Reunion je tim sa 10+ godina iskustva u marketingu i web razvoju. Upoznajte ko smo, kako radimo i zašto nam klijenti vjeruju.')
+@section('meta_keywords', 'o nama, reunion agencija, marketing tim mostar')
+
+@section('og_title', 'O nama | Reunion agencija')
+@section('og_description', '10+ godina pretvaramo ideje u web rješenja i digitalne kampanje koje daju rezultate.')
+
 @section('content')
 
 <x-page-hero-section title="O nama" description="10+ godina pretvaramo ideje u web rješenja i digitalne kampanje koje daju rezultate." />

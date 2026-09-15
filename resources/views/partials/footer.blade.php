@@ -1,5 +1,5 @@
 <footer class="bg-primary text-default">
-    <div class="max-w-screen-2xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div class="max-w-screen-2xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
         <!-- Logo + opis -->
         <div>
             <picture>
@@ -22,6 +22,19 @@
                 Reunion web & marketing agencija se bavi dizajnom i izradom web stranica, web aplikacija, kao i digitalnlim marketingom.
                 Vezane usluge su oglašavanje (Google ads, Facebook & Instagram ads), kao i profesionalna fotografija.
             </p>
+        </div>
+
+        <!-- Usluge -->
+        <div class="md:text-center font-heading">
+            <p class="text-2xl mb-4">Usluge</p>
+            <ul class="space-y-2 text-sm">
+                <li><a href="{{ route('web-design') }}" class="hover:underline">Izrada web stranica</a></li>
+                <li><a href="{{ route('web-dev') }}" class="hover:underline">Izrada web aplikacija</a></li>
+                <li><a href="{{ route('social-media') }}" class="hover:underline">Digitalni marketing</a></li>
+                <li><a href="{{ route('google-ads') }}" class="hover:underline">Google & Meta ads</a></li>
+                <li><a href="{{ route('pr-komunikacija') }}" class="hover:underline">PR & Eventi</a></li>
+                <li><a href="{{ route('branding') }}" class="hover:underline">Branding & dizajn</a></li>
+            </ul>
         </div>
 
         <!-- Kontakt podaci -->

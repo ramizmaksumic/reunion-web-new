@@ -1,5 +1,12 @@
 @extends('layouts.site')
 
+@section('title', 'Novosti | Blog Reunion agencije')
+@section('meta_description', 'Pratite novosti, savjete i zanimljivosti iz svijeta marketinga, web dizajna i digitalnog oglašavanja na blogu Reunion agencije.')
+@section('meta_keywords', 'novosti, blog, marketing savjeti')
+
+@section('og_title', 'Novosti | Reunion agencija')
+@section('og_description', 'Informacije & zanimljivosti iz svijeta marketinga i web razvoja.')
+
 @section('content')
 
 <x-page-hero-section title="Novosti" description="informacije & zanimljivosti" />

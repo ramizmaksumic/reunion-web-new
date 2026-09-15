@@ -1,5 +1,9 @@
 @extends('layouts.site')
 
+@section('title', $post->title . ' | Reunion novosti')
+@section('meta_description', \Illuminate\Support\Str::limit(strip_tags($post->body), 155))
+@section('meta_keywords', $post->title . ', novosti, reunion agencija')
+
 @section('og_title', $post->title)
 @section('og_description', \Illuminate\Support\Str::words(strip_tags($post->body), 25))
 @section('og_image', $post->image ? asset('storage/'.$post->image) : asset('images/logo.png'))

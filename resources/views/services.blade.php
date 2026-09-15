@@ -1,5 +1,12 @@
 @extends('layouts.site')
 
+@section('title', 'Usluge | Web dizajn, digitalni marketing, Google ads i branding')
+@section('meta_description', 'Pregled usluga Reunion agencije: izrada web stranica i aplikacija, digitalni marketing, Google & Meta oglašavanje, PR, branding i team building.')
+@section('meta_keywords', 'usluge marketing agencije, web dizajn usluge, digitalni marketing usluge')
+
+@section('og_title', 'Usluge | Reunion agencija')
+@section('og_description', 'Pojedinačne usluge ili kompletan marketing sistem — vi birate.')
+
 @section('content')
 
 <x-page-hero-section title="Usluge" description="Pojedinačne usluge ili kompletan marketing sistem — vi birate" />

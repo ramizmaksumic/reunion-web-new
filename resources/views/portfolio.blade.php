@@ -1,5 +1,12 @@
 @extends('layouts.site')
 
+@section('title', 'Portfolio | Projekti koje je realizirala Reunion agencija')
+@section('meta_description', 'Pogledajte portfolio Reunion agencije – web stranice, aplikacije, brendiranje i marketinške kampanje koje smo realizirali za naše klijente.')
+@section('meta_keywords', 'portfolio, projekti, reunion agencija')
+
+@section('og_title', 'Portfolio | Reunion agencija')
+@section('og_description', 'Pogledajte projekte koje smo stvarali — jedan po jedan, s razlogom.')
+
 @section('content')
 
 
