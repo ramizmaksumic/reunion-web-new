@@ -37,12 +37,12 @@
 
         <!-- Dugme (desktop) -->
         <div class="hidden md:inline-block">
-            <a href="{{ route('digitalni-savjetnik') }}" class="font-heading bg-primary 
-text-xs sm:text-sm md:text-sm lg:text-md 
-px-3 sm:px-4 md:px-4 lg:px-8 
-py-2 md:py-3 lg:py-4 
+            <a href="{{ route('project-inquiry') }}" class="font-heading bg-primary
+text-xs sm:text-sm md:text-sm lg:text-md
+px-3 sm:px-4 md:px-4 lg:px-8
+py-2 md:py-3 lg:py-4
 rounded-2xl text-default whitespace-nowrap">
-                Digitalni savjetnik &rarr;
+                Zatraži ponudu &rarr;
             </a>
         </div>
 
@@ -65,7 +65,7 @@ rounded-2xl text-default whitespace-nowrap">
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('portfolio') }}">Portfolio</a></li>
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('post') }}">Novosti</a></li>
                 <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('contact') }}">Kontakt</a></li>
-                <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('digitalni-savjetnik') }}">Digitalni savjetnik</a></li>
+                <li class="py-2 px-4 hover:bg-primary rounded-xl transition duration-350 hover:text-default"><a href="{{ route('project-inquiry') }}">Zatraži ponudu</a></li>
                 <div class="flex text-center mt-10">
                     <ul class="flex font-heading gap-x-2 text-center mx-auto">
                         <li><a href="" class="hover:text-primary">facebook</a></li>|

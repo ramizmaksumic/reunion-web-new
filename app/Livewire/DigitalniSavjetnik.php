@@ -8,6 +8,12 @@ use Livewire\Component;
 class DigitalniSavjetnik extends Component
 {
 
+    // Retired tool: also reject updates from previously opened Livewire sessions.
+    public function boot(): void
+    {
+        abort(410);
+    }
+
     public $businessType;
     public $city;
     public $hasWebsite;

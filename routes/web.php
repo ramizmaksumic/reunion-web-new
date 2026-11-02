@@ -52,9 +52,7 @@ Route::get('/novosti/{post:slug}', [PostController::class, 'singlePost'])->name(
 
 Route::post('send-order', [ContactController::class, 'send'])->name('send.order');
 
-Route::get('/digitalni-savjetnik', function () {
-    return view('pages.digitalni-savjetnik');
-})->name('digitalni-savjetnik');
+Route::permanentRedirect('/digitalni-savjetnik', '/zatrazi-ponudu')->name('digitalni-savjetnik');
 
 Route::get('/projects/{project}/documentation', [\App\Http\Controllers\ProjectDocumentationController::class, 'show'])
     ->name('projects.documentation');
@@ -75,3 +73,5 @@ Route::middleware(['auth', 'admin'])
     });
 
 require __DIR__ . '/auth.php';
+
+Route::view('/zatrazi-ponudu', 'project-inquiry')->name('project-inquiry');

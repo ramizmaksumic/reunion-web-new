@@ -26,15 +26,15 @@
 
     <link href="/assets/fonts/fontawesome/css/all.min.css" rel="stylesheet">
 
-    <!-- Google reCAPTCHA   -->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <!-- Your code -->
-
 
 
     <title>@yield('title', 'Reunion web & marketing agencija Mostar')</title>
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @if(request()->routeIs('project-inquiry'))
+        @vite(['resources/css/app.css', 'resources/js/inquiry.js'])
+    @else
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @endif
 </head>
 
 <body class="font-sans antialiased overflow-x-hidden">

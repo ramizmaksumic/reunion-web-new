@@ -29,6 +29,13 @@ return [
     */
 
     'disks' => [
+        'inquiry-temporary' => [
+            'driver' => 'local',
+            'root' => storage_path('app/private/livewire'),
+            'visibility' => 'private',
+            'serve' => false,
+            'throw' => true,
+        ],
 
         'local' => [
             'driver' => 'local',
